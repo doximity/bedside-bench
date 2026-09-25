@@ -1,0 +1,199 @@
+{
+  "case_id": "df2133ae1dcb111f236a0b41a8cfa1d1",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "69-year-old man with hypertension and benign prostatic hyperplasia, on lisinopril and tamsulosin, had a creatinine of 1.1 mg/dL six months ago. He has three weeks of fatigue, migratory arthralgias, low-grade fevers, 4 kg weight loss, and nasal congestion with bloody crusting; he started ibuprofen for his joints. Creatinine today is 3.6. Urinalysis shows 3+ blood and 2+ protein, and the lab reports dysmorphic red cells; urine protein-to-creatinine ratio is 1.8 g/g. BP is 158/92 and SpO2 97% with no hemoptysis. Urology suggested a CT urogram with contrast and cystoscopy for the hematuria. What would you do?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_0",
+      "text": "Recognize a likely rapidly progressive glomerulonephritis requiring urgent evaluation.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_1",
+      "text": "Obtain same-day nephrology consultation.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_2",
+      "text": "Send ANCA testing for MPO and PR3 antibodies.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_3",
+      "text": "Send anti-glomerular basement membrane antibodies.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_4",
+      "text": "Arrange a kidney biopsy.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_5",
+      "text": "Stop ibuprofen.",
+      "points": 3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_6",
+      "text": "Have an experienced reviewer examine the urine sediment for red cell casts.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_7",
+      "text": "Check complement C3 and C4.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_8",
+      "text": "Obtain a renal ultrasound.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_9",
+      "text": "Obtain chest imaging to assess for pulmonary involvement.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_10",
+      "text": "Start high-dose glucocorticoids without awaiting biopsy if serologies are positive or kidney function is declining rapidly.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_11",
+      "text": "Monitor for alveolar hemorrhage symptoms and follow the hemoglobin.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_12",
+      "text": "Check CBC and a metabolic panel, including potassium and bicarbonate, with serial creatinine.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_13",
+      "text": "Monitor urine output and watch for dialysis indications.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_14",
+      "text": "Start plasma exchange if anti-glomerular basement membrane antibodies are positive.",
+      "points": 2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_15",
+      "text": "Send ANA and anti-double-stranded DNA antibodies.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_16",
+      "text": "Obtain hepatitis B, hepatitis C, and HIV serologies.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_17",
+      "text": "Hold lisinopril during the acute kidney injury.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_18",
+      "text": "Refer to ENT to evaluate the sinonasal disease.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_19",
+      "text": "Send serum protein electrophoresis and serum free light chains.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_20",
+      "text": "Obtain blood cultures given fever, to exclude endocarditis-associated glomerulonephritis.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_21",
+      "text": "Adjust medication doses for renal function.",
+      "points": 1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_22",
+      "text": "Order a CT urogram with intravenous contrast as the next step.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_23",
+      "text": "Attribute the kidney injury to NSAIDs and recheck in four weeks.",
+      "points": -3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_24",
+      "text": "Refer for routine outpatient nephrology in two to three months.",
+      "points": -3
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_25",
+      "text": "Attribute the kidney injury to prostatic obstruction and increase tamsulosin without imaging.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_26",
+      "text": "Continue ibuprofen for the arthralgias.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_27",
+      "text": "Delay immunosuppression until biopsy when serologies are strongly positive and function is worsening.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_28",
+      "text": "Start cyclophosphamide empirically before serologies or biopsy.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_29",
+      "text": "Increase the lisinopril dose to control blood pressure and proteinuria now.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_30",
+      "text": "Give an intravenous fluid bolus for presumed prerenal injury.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_31",
+      "text": "Prescribe high-dose prednisone at home and follow up in one month.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_32",
+      "text": "Add spironolactone for blood pressure control.",
+      "points": -2
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_33",
+      "text": "Perform cystoscopy as the first evaluation of the hematuria.",
+      "points": -1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_34",
+      "text": "Treat the sinus symptoms with antibiotics alone.",
+      "points": -1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_35",
+      "text": "Order a 24-hour urine collection and defer serologies.",
+      "points": -1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_36",
+      "text": "Order a PSA and prostate biopsy as the primary evaluation.",
+      "points": -1
+    },
+    {
+      "item_id": "df2133ae1dcb111f236a0b41a8cfa1d1_37",
+      "text": "Diagnose vasculitis from ANCA alone and skip biopsy when it can be done safely.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

@@ -1,0 +1,199 @@
+{
+  "case_id": "fddd52389244af91efb7d139c7325bf6",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "An 83-year-old man in assisted living with type 2 diabetes, Parkinson disease, osteoporosis with a prior vertebral fracture, and stage 3b CKD has two months of intense itch and now tense blisters on his thighs, flexural arms, and lower abdomen covering about 30% of his body surface area. Biopsy shows a subepidermal blister with eosinophils, and direct immunofluorescence shows linear IgG and C3 along the basement membrane. Medications are linagliptin (started nine months ago), insulin glargine, carbidopa-levodopa, alendronate, and lisinopril. His A1c is 7.4%. Staff can apply creams, but he can't reach his back himself. His family is asking for pills to stop it fast. How should we treat him?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_0",
+      "text": "Discontinue linagliptin because DPP-4 inhibitors are associated with bullous pemphigoid.",
+      "points": 3
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_1",
+      "text": "Adjust his diabetes regimen, such as titrating insulin, to replace linagliptin and monitor glucose.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_2",
+      "text": "Start whole-body superpotent topical corticosteroid such as clobetasol 0.05% cream applied to lesional and affected skin as first-line therapy.",
+      "points": 3
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_3",
+      "text": "Arrange for staff to apply the topical steroid with clear written instructions on quantity and sites.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_4",
+      "text": "Taper the topical corticosteroid gradually over several months according to disease control.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_5",
+      "text": "Consider doxycycline as a steroid-sparing adjunct.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_6",
+      "text": "Drain large tense blisters with a sterile needle while leaving the blister roof intact.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_7",
+      "text": "Use nonadherent dressings and emollients for eroded skin.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_8",
+      "text": "Monitor eroded areas for secondary infection.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_9",
+      "text": "Use a non-sedating antihistamine as an adjunct for itch if helpful.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_10",
+      "text": "If systemic corticosteroids become necessary, use the lowest effective dose with glucose monitoring, bone protection, and a planned taper.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_11",
+      "text": "Consider dupilumab or another steroid-sparing agent for disease refractory to topical therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_12",
+      "text": "Obtain BP180 and BP230 antibody levels to support diagnosis and monitoring.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_13",
+      "text": "Arrange dermatology follow-up within two to four weeks.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_14",
+      "text": "Counsel the family that bullous pemphigoid is chronic and relapsing, not contagious, and may take months to remit.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_15",
+      "text": "Monitor for skin atrophy from prolonged topical corticosteroid use.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_16",
+      "text": "Monitor blood glucose more closely during extensive topical corticosteroid use because of systemic absorption.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_17",
+      "text": "Refer to dermatology for co-management.",
+      "points": 2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_18",
+      "text": "Continue osteoporosis therapy and reassess fall and fracture risk if systemic steroids are needed.",
+      "points": 1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_19",
+      "text": "Start prednisone 1 mg/kg daily as first-line therapy.",
+      "points": -3
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_20",
+      "text": "Continue linagliptin.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_21",
+      "text": "Switch linagliptin to another DPP-4 inhibitor such as sitagliptin.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_22",
+      "text": "Use only low-potency hydrocortisone cream.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_23",
+      "text": "Completely unroof blisters and remove the blister roof.",
+      "points": -1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_24",
+      "text": "Start methotrexate without adjusting for his renal function.",
+      "points": -3
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_25",
+      "text": "Prescribe diphenhydramine or hydroxyzine for itch.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_26",
+      "text": "Use rituximab as first-line therapy.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_27",
+      "text": "Stop the topical corticosteroid abruptly once the blisters clear.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_28",
+      "text": "Prescribe empiric oral antibiotics for all blisters without signs of infection.",
+      "points": -1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_29",
+      "text": "Start azathioprine without checking TPMT activity.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_30",
+      "text": "Treat the eruption as bullous impetigo with antibiotics alone.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_31",
+      "text": "Order routine whole-body CT screening for occult malignancy.",
+      "points": -1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_32",
+      "text": "Stop all glucose-lowering therapy when linagliptin is stopped.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_33",
+      "text": "Apply adhesive tape or dressings directly to fragile skin.",
+      "points": -1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_34",
+      "text": "Use intravenous immunoglobulin as first-line therapy.",
+      "points": -1
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_35",
+      "text": "Start dapsone without checking G6PD activity.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_36",
+      "text": "Prescribe a five-day oral steroid burst without a taper.",
+      "points": -2
+    },
+    {
+      "item_id": "fddd52389244af91efb7d139c7325bf6_37",
+      "text": "Repeat the skin biopsy because the diagnosis is uncertain.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

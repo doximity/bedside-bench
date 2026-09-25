@@ -1,0 +1,204 @@
+{
+  "case_id": "8d365f46e02aedfd692dc99bcfef8c3d",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "68-year-old man, post-operative day 7 after elective right total knee arthroplasty. He received unfractionated heparin intraoperatively and has been on enoxaparin 40 mg daily since. Platelets were 238K preoperatively and 210K on day 1, and are 92K today. He now has a painful, swollen left calf, and duplex shows an acute left popliteal DVT. No bleeding, the wound looks good, creatinine 1.1, and liver tests are normal. He has no infection, and no new medications other than acetaminophen and oxycodone. Orthopedics wants to increase the enoxaparin to treatment dose and start warfarin. Do you agree?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_0",
+      "text": "Calculate a 4Ts score and recognize a high pretest probability of heparin-induced thrombocytopenia.",
+      "points": 3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_1",
+      "text": "Stop all heparin exposure, including low-molecular-weight heparin, heparin flushes, and heparin-coated catheters.",
+      "points": 3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_2",
+      "text": "Start a therapeutic-dose non-heparin anticoagulant immediately, before laboratory confirmation.",
+      "points": 3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_3",
+      "text": "Send a PF4-heparin antibody immunoassay.",
+      "points": 3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_4",
+      "text": "Document heparin-induced thrombocytopenia as a heparin allergy in the medical record.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_5",
+      "text": "Send a functional assay such as a serotonin release assay when the immunoassay is positive or indeterminate.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_6",
+      "text": "Choose fondaparinux or a direct oral anticoagulant as reasonable options in this stable patient with normal renal function, or argatroban or bivalirudin if a parenteral titratable agent is preferred.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_7",
+      "text": "Obtain bilateral lower-extremity duplex to look for additional thrombi.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_8",
+      "text": "Assess for other thrombotic complications, including skin necrosis at injection sites, limb ischemia, and pulmonary embolism symptoms.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_9",
+      "text": "Obtain hematology consultation.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_10",
+      "text": "Monitor platelet counts daily until recovery.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_11",
+      "text": "Delay warfarin until platelets recover to at least 150K and overlap it with a non-heparin anticoagulant for at least five days.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_12",
+      "text": "Give vitamin K if warfarin has already been started.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_13",
+      "text": "Anticoagulate for at least three months for heparin-induced thrombocytopenia with thrombosis.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_14",
+      "text": "Confirm surgical-site bleeding risk with orthopedics before starting therapeutic anticoagulation.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_15",
+      "text": "Educate the patient about heparin-induced thrombocytopenia and future heparin avoidance.",
+      "points": 2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_16",
+      "text": "Consider alternative causes of thrombocytopenia without delaying treatment.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_17",
+      "text": "Review a peripheral smear to exclude pseudothrombocytopenia.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_18",
+      "text": "Plan future heparin avoidance and involve hematology if heparin is ever needed, such as for cardiac surgery.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_19",
+      "text": "Monitor the aPTT and check baseline coagulation studies and liver function if argatroban is used.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_20",
+      "text": "Check fibrinogen and D-dimer if disseminated intravascular coagulation is a concern.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_21",
+      "text": "Provide return precautions for chest pain, dyspnea, or new limb pain or swelling.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_22",
+      "text": "Use full acute-VTE dosing, including any loading phase, if a direct oral anticoagulant is selected.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_23",
+      "text": "Alert pharmacy and nursing so that heparin is removed from all order sets for this patient.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_24",
+      "text": "Screen the upper extremities and line sites if symptoms suggest additional thrombosis.",
+      "points": 1
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_25",
+      "text": "Increase enoxaparin to therapeutic dosing.",
+      "points": -3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_26",
+      "text": "Start warfarin now while platelets are low.",
+      "points": -3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_27",
+      "text": "Stop all anticoagulation while awaiting antibody results.",
+      "points": -3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_28",
+      "text": "Continue heparin until serotonin release assay results return.",
+      "points": -3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_29",
+      "text": "Switch to an unfractionated heparin infusion.",
+      "points": -3
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_30",
+      "text": "Transfuse platelets prophylactically.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_31",
+      "text": "Place an inferior vena cava filter instead of anticoagulating.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_32",
+      "text": "Continue heparin flushes for intravenous lines.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_33",
+      "text": "Rule out heparin-induced thrombocytopenia because he mainly received low-molecular-weight heparin.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_34",
+      "text": "Treat the DVT with aspirin alone.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_35",
+      "text": "Rechallenge with heparin prophylaxis at discharge once platelets recover.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_36",
+      "text": "Diagnose immune thrombocytopenia and give IVIG or glucocorticoids.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_37",
+      "text": "Stop anticoagulation once platelets recover within two weeks.",
+      "points": -2
+    },
+    {
+      "item_id": "8d365f46e02aedfd692dc99bcfef8c3d_38",
+      "text": "Order a bone marrow biopsy.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

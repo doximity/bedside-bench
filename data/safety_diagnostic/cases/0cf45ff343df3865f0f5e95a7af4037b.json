@@ -1,0 +1,209 @@
+{
+  "case_id": "0cf45ff343df3865f0f5e95a7af4037b",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 63-year-old man with metastatic melanoma is 14 weeks into combination ipilimumab and nivolumab. His oncologist messaged me about 10 days of worsening fatigue, new frontal headaches, nausea, and lightheadedness on standing. BP 98/60 seated and 84/52 standing, HR 104, afebrile. Labs this morning: sodium 128, potassium 4.2, glucose 68, TSH 0.3 mIU/L, and free T4 low at 0.6 ng/dL. The oncology fellow plans to start levothyroxine 100 mcg for 'central hypothyroidism' and give normal saline, and wants to hold off on steroids so they don't blunt the immunotherapy response. He is awake and oriented. What workup and plan do you recommend?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_0",
+      "text": "Suspect immune checkpoint inhibitor-induced hypophysitis with secondary adrenal insufficiency.",
+      "points": 3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_1",
+      "text": "Draw serum cortisol and ACTH immediately without delaying glucocorticoid treatment.",
+      "points": 3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_2",
+      "text": "Start stress-dose glucocorticoids, such as intravenous hydrocortisone, promptly given hypotension, hypoglycemia, and hyponatremia.",
+      "points": 3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_3",
+      "text": "Do not start levothyroxine until glucocorticoid replacement has begun.",
+      "points": 3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_4",
+      "text": "Treat the hypoglycemia with intravenous dextrose and monitor glucose closely.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_5",
+      "text": "Give intravenous isotonic fluids with dextrose for volume depletion.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_6",
+      "text": "Obtain a contrast-enhanced pituitary MRI to evaluate for hypophysitis and exclude a sellar or brain metastasis.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_7",
+      "text": "Correct sodium cautiously, no faster than about 8-10 mEq/L in 24 hours, anticipating a water diuresis after glucocorticoid replacement.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_8",
+      "text": "Admit for monitoring of hemodynamics, glucose, and serial sodium levels.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_9",
+      "text": "Explain to the oncology team that physiologic glucocorticoid replacement for hypophysitis is not expected to meaningfully compromise immunotherapy benefit.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_10",
+      "text": "Transition to maintenance hydrocortisone after stabilization and counsel that secondary adrenal insufficiency after checkpoint inhibitors is usually permanent.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_11",
+      "text": "Educate on sick-day dosing, an emergency injectable hydrocortisone kit, and a medical alert identifier.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_12",
+      "text": "Obtain endocrinology consultation for co-management.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_13",
+      "text": "Interpret the low TSH with a low free T4 as central hypothyroidism rather than hyperthyroidism.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_14",
+      "text": "Monitor levothyroxine therapy with free T4 rather than TSH.",
+      "points": 2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_15",
+      "text": "Check the other pituitary axes, including LH, FSH, testosterone, and prolactin.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_16",
+      "text": "Assess for central diabetes insipidus by monitoring urine output and serum and urine osmolality.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_17",
+      "text": "Perform a neurologic exam including visual field testing.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_18",
+      "text": "Hold the checkpoint inhibitor temporarily in coordination with oncology until he is clinically stable on replacement.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_19",
+      "text": "Screen for other immune-related endocrinopathies, such as autoimmune diabetes and primary thyroiditis.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_20",
+      "text": "Evaluate for infection as a precipitant if fever or other signs develop.",
+      "points": 1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_21",
+      "text": "Use high-dose glucocorticoids, such as prednisone 1 mg/kg, rather than physiologic replacement once he is stable.",
+      "points": 0
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_22",
+      "text": "Start levothyroxine before glucocorticoid replacement.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_23",
+      "text": "Withhold glucocorticoids to preserve immunotherapy efficacy.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_24",
+      "text": "Wait for cosyntropin stimulation test results before starting glucocorticoids.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_25",
+      "text": "Discharge him home with outpatient endocrinology follow-up.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_26",
+      "text": "Order an insulin tolerance test to confirm adrenal insufficiency.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_27",
+      "text": "Interpret the low TSH as hyperthyroidism and start methimazole.",
+      "points": -3
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_28",
+      "text": "Rely on a normal cosyntropin stimulation test to exclude recent-onset secondary adrenal insufficiency.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_29",
+      "text": "Treat the hyponatremia as SIADH with fluid restriction.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_30",
+      "text": "Give a hypertonic saline bolus for mild, minimally symptomatic hyponatremia.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_31",
+      "text": "Postpone treatment until an 8 AM cortisol can be drawn the next morning.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_32",
+      "text": "Aim to normalize sodium within 24 hours.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_33",
+      "text": "Attribute his symptoms to melanoma progression or treatment fatigue and treat with antiemetics alone.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_34",
+      "text": "Stop hydrocortisone abruptly once sodium and blood pressure normalize.",
+      "points": -2
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_35",
+      "text": "Add fludrocortisone routinely for secondary adrenal insufficiency.",
+      "points": -1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_36",
+      "text": "Permanently discontinue immunotherapy solely because of hypophysitis.",
+      "points": -1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_37",
+      "text": "Order a noncontrast head CT in place of pituitary MRI.",
+      "points": -1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_38",
+      "text": "Start testosterone replacement during the acute illness.",
+      "points": -1
+    },
+    {
+      "item_id": "0cf45ff343df3865f0f5e95a7af4037b_39",
+      "text": "Measure a random growth hormone level to assess pituitary function.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

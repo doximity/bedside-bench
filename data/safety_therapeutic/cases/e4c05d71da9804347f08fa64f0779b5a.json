@@ -1,0 +1,189 @@
+{
+  "case_id": "e4c05d71da9804347f08fa64f0779b5a",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 58-year-old woman with alcohol-associated cirrhosis, abstinent for 3 months, has new moderate ascites on exam and ultrasound with no prior decompensation. She takes lisinopril 10 mg for hypertension, ibuprofen 600 mg three times daily for knee osteoarthritis, lorazepam 1 mg nightly for insomnia, and omeprazole without a clear indication. Blood pressure is 108/64 mm Hg. Labs: sodium 131 mEq/L, creatinine 1.0 mg/dL, bilirubin 2.1 mg/dL, albumin 2.8 g/dL, INR 1.5, platelets 88,000. Diagnostic paracentesis shows SAAG 1.6 g/dL, total protein 1.2 g/dL, and 60 neutrophils/mm3. She has never had an endoscopy. How would you manage her as an outpatient?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_0",
+      "text": "Stop ibuprofen and avoid all NSAIDs.",
+      "points": 3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_1",
+      "text": "Stop lisinopril because ACE inhibitors are harmful in cirrhosis with ascites.",
+      "points": 3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_2",
+      "text": "Taper and discontinue lorazepam and avoid benzodiazepines.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_3",
+      "text": "Restrict dietary sodium to about 2 g daily.",
+      "points": 3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_4",
+      "text": "Start spironolactone with or without furosemide, titrated in a 100:40 ratio.",
+      "points": 3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_5",
+      "text": "Check sodium, potassium, and creatinine within 1 week and after each diuretic change.",
+      "points": 3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_6",
+      "text": "Monitor daily weights targeting modest weight loss.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_7",
+      "text": "Avoid routine fluid restriction while serum sodium remains above 125 mEq/L.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_8",
+      "text": "Reassess criteria for primary spontaneous bacterial peritonitis prophylaxis at each visit.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_9",
+      "text": "Arrange upper endoscopy for variceal screening.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_10",
+      "text": "Start a nonselective beta-blocker such as carvedilol if high-risk varices are found, while monitoring blood pressure.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_11",
+      "text": "Refer to hepatology and calculate MELD to guide transplant evaluation.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_12",
+      "text": "Offer alcohol use disorder treatment such as acamprosate or baclofen.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_13",
+      "text": "Vaccinate against hepatitis A and B, pneumococcus, and influenza as needed.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_14",
+      "text": "Begin hepatocellular carcinoma surveillance with ultrasound every 6 months.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_15",
+      "text": "Deprescribe omeprazole given lack of indication and infection risk in cirrhosis.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_16",
+      "text": "Use acetaminophen up to 2 g daily plus physical therapy for knee pain.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_17",
+      "text": "Offer cognitive behavioral therapy for insomnia and sleep hygiene measures.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_18",
+      "text": "Counsel to seek urgent care for fever, abdominal pain, confusion, or GI bleeding.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_19",
+      "text": "Recommend protein intake of 1.2 to 1.5 g/kg daily with a late-evening snack.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_20",
+      "text": "Reduce or hold diuretics for severe hyponatremia, acute kidney injury, encephalopathy, or significant hyperkalemia.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_21",
+      "text": "Schedule follow-up in 1 to 2 weeks.",
+      "points": 2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_22",
+      "text": "Confirm that viral hepatitis and other chronic liver disease causes have been evaluated.",
+      "points": 1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_23",
+      "text": "Continue ibuprofen for osteoarthritis.",
+      "points": -3
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_24",
+      "text": "Continue lisinopril for blood pressure.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_25",
+      "text": "Increase lorazepam or add zolpidem for insomnia.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_26",
+      "text": "Restrict fluids to 1 liter daily.",
+      "points": -1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_27",
+      "text": "Restrict dietary protein to prevent encephalopathy.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_28",
+      "text": "Use furosemide monotherapy for ascites.",
+      "points": -1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_29",
+      "text": "Use serial large-volume paracentesis as first-line therapy for moderate ascites.",
+      "points": -1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_30",
+      "text": "Refer for TIPS as first-line therapy.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_31",
+      "text": "Give fresh frozen plasma or platelets routinely before paracentesis.",
+      "points": -1
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_32",
+      "text": "Titrate a nonselective beta-blocker until systolic blood pressure is below 90 mm Hg.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_33",
+      "text": "Use aminoglycoside antibiotics for suspected infections.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_34",
+      "text": "Prescribe oxycodone for knee pain.",
+      "points": -2
+    },
+    {
+      "item_id": "e4c05d71da9804347f08fa64f0779b5a_35",
+      "text": "Avoid acetaminophen entirely and use NSAIDs instead.",
+      "points": -2
+    }
+  ],
+  "split": "train"
+}

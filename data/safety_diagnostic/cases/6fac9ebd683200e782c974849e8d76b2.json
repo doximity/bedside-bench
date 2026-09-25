@@ -1,0 +1,189 @@
+{
+  "case_id": "6fac9ebd683200e782c974849e8d76b2",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "Quick question about a patient my nurse practitioner saw this morning. She's an 81-year-old retired seamstress with nonvalvular atrial fibrillation on apixaban 5 mg twice daily, hypertension, and mild cognitive impairment, who lives alone with a daughter nearby. Last evening she tripped on a kitchen rug, struck the back of her head on the counter, and isn't sure whether she blacked out. Her daughter brought her in because she has a mild occipital headache and vomited once this morning. She is alert and oriented, GCS 15, with a small occipital scalp hematoma, no focal neurologic deficits, and BP 152/84. The daughter asks whether we can just watch her at home since she seems like herself, and whether she should skip her apixaban for a while. What would you do?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_0",
+      "text": "Obtain a same-day noncontrast CT of the head because she is elderly, anticoagulated, and has headache and vomiting after head trauma.",
+      "points": 3
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_1",
+      "text": "Send her to the emergency department today for imaging and observation rather than arranging routine outpatient imaging.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_2",
+      "text": "Hold the next apixaban dose until intracranial hemorrhage has been excluded.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_3",
+      "text": "If CT shows intracranial hemorrhage, stop apixaban and give a specific reversal agent such as andexanet alfa or four-factor prothrombin complex concentrate with urgent neurosurgical consultation.",
+      "points": 3
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_4",
+      "text": "Document the time of the last apixaban dose and check a CBC, creatinine, and coagulation studies.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_5",
+      "text": "Evaluate the cervical spine and image it according to a validated rule, recognizing that age over 65 is a high-risk feature.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_6",
+      "text": "Evaluate for syncope as the cause of the fall with orthostatic vital signs and a medication review.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_7",
+      "text": "Obtain an ECG to look for arrhythmia or conduction disease given the uncertain loss of consciousness.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_8",
+      "text": "Provide written head-injury return precautions and ensure a responsible adult stays with her overnight if she is discharged after a negative CT.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_9",
+      "text": "Repeat head imaging or observe further if headache, vomiting, or confusion worsen after an initial negative CT.",
+      "points": 1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_10",
+      "text": "Resume apixaban after a negative CT because her stroke risk from atrial fibrillation outweighs the bleeding risk from falls.",
+      "points": 2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_11",
+      "text": "Arrange a home safety evaluation and physical therapy for gait and balance training to reduce future falls.",
+      "points": 1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_12",
+      "text": "Compare her current cognition with her baseline as described by the daughter to detect subtle delayed changes.",
+      "points": 1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_13",
+      "text": "Review for medications that increase bleeding or fall risk, such as NSAIDs, sedatives, or excessive antihypertensive therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_14",
+      "text": "Send an apixaban-calibrated anti-factor Xa level if readily available.",
+      "points": 0
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_15",
+      "text": "Admit her for overnight observation even after a negative CT and normal neurologic examination.",
+      "points": 0
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_16",
+      "text": "Check a vitamin D level as part of the fall-risk assessment.",
+      "points": 0
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_17",
+      "text": "Order a transthoracic echocardiogram as part of the syncope evaluation.",
+      "points": 0
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_18",
+      "text": "Allow observation at home without head imaging because she has a GCS of 15 and a nonfocal examination.",
+      "points": -3
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_19",
+      "text": "Apply a minor head injury decision rule to forgo CT even though she is anticoagulated.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_20",
+      "text": "Schedule an outpatient head CT for later in the week.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_21",
+      "text": "Give andexanet alfa or prothrombin complex concentrate empirically before imaging confirms a hemorrhage in this stable patient.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_22",
+      "text": "Give vitamin K or fresh frozen plasma to reverse apixaban.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_23",
+      "text": "Permanently discontinue apixaban because of fall risk after a negative CT.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_24",
+      "text": "Switch apixaban to aspirin as a safer alternative for a patient who falls.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_25",
+      "text": "Reduce apixaban to 2.5 mg twice daily based on age alone without meeting dose-reduction criteria.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_26",
+      "text": "Order MRI of the brain as the initial study instead of CT.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_27",
+      "text": "Obtain skull radiographs to evaluate for fracture.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_28",
+      "text": "Prescribe an opioid or other sedating medication for the headache before hemorrhage is excluded.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_29",
+      "text": "Recommend ibuprofen or aspirin for the headache.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_30",
+      "text": "Attribute the vomiting to a viral illness without further evaluation.",
+      "points": -2
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_31",
+      "text": "Order a routine EEG.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_32",
+      "text": "Treat the event as a simple mechanical fall without evaluating for possible syncope.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_33",
+      "text": "Hold apixaban for a week after a negative CT as a precaution.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_34",
+      "text": "Transfuse platelets empirically to counteract the anticoagulant effect.",
+      "points": -1
+    },
+    {
+      "item_id": "6fac9ebd683200e782c974849e8d76b2_35",
+      "text": "Send her home to sleep alone overnight after CT without return precautions.",
+      "points": -2
+    }
+  ],
+  "split": "train"
+}

@@ -1,0 +1,209 @@
+{
+  "case_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "41-year-old woman born in Nigeria who has lived in the US for 15 years returned nine days ago from a three-week trip visiting family in Lagos. She took no malaria prophylaxis, saying she grew up there and is immune. She has had two days of fever to 39.4 C with rigors, headache, myalgias, and mild diarrhea. She is alert, BP 112/70, HR 108. Labs: platelets 88K, total bilirubin 2.1 mg/dL, creatinine 1.0, and influenza/COVID testing negative. Urgent care told her it was probably a viral illness. What would you do next?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_0",
+      "text": "Treat this as possible falciparum malaria until proven otherwise.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_1",
+      "text": "Obtain thick and thin blood smears immediately, with same-day interpretation.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_2",
+      "text": "Repeat blood smears every 12 to 24 hours for a total of three sets if the first is negative.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_3",
+      "text": "Determine the Plasmodium species and percent parasitemia.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_4",
+      "text": "Assess for severe malaria criteria, including impaired consciousness, parasitemia of 5% or more, hypoglycemia, acidosis, renal injury, respiratory distress, bleeding, shock, and severe anemia.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_5",
+      "text": "Give intravenous artesunate if severe malaria is present.",
+      "points": 3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_6",
+      "text": "Run a rapid antigen test in parallel, without letting it replace microscopy.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_7",
+      "text": "Check glucose, lactate, metabolic panel, CBC, liver tests, and coagulation studies.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_8",
+      "text": "Obtain blood cultures.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_9",
+      "text": "Evaluate in the hospital, with admission for confirmed falciparum malaria given her thrombocytopenia and hyperbilirubinemia.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_10",
+      "text": "Treat uncomplicated falciparum malaria with artemether-lumefantrine or atovaquone-proguanil.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_11",
+      "text": "Obtain a pregnancy test before choosing an antimalarial.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_12",
+      "text": "Consider other travel-related diagnoses, including typhoid, dengue, rickettsial infection, leptospirosis, and acute HIV.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_13",
+      "text": "Follow parasitemia daily until clearance.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_14",
+      "text": "Obtain infectious diseases consultation.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_15",
+      "text": "Counsel that immunity wanes after years away and advise prophylaxis for future trips.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_16",
+      "text": "Provide return precautions for confusion, dyspnea, dark urine, or decreased urine output.",
+      "points": 2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_17",
+      "text": "Advise taking artemether-lumefantrine with fatty food.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_18",
+      "text": "Obtain a baseline ECG and review drug interactions before antimalarial therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_19",
+      "text": "Monitor for delayed hemolysis after artesunate with weekly hemoglobin checks for four weeks.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_20",
+      "text": "Send dengue testing.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_21",
+      "text": "Obtain HIV testing.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_22",
+      "text": "Use acetaminophen rather than NSAIDs for fever until dengue is excluded.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_23",
+      "text": "Report confirmed malaria to public health.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_24",
+      "text": "Give primaquine or tafenoquine radical cure for P. vivax or P. ovale only after G6PD testing.",
+      "points": 1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_25",
+      "text": "Accept the viral diagnosis and discharge with supportive care.",
+      "points": -3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_26",
+      "text": "Exclude malaria after a single negative smear.",
+      "points": -3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_27",
+      "text": "Rely on the patient's childhood immunity to defer testing.",
+      "points": -3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_28",
+      "text": "Treat with chloroquine.",
+      "points": -3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_29",
+      "text": "Give primaquine without G6PD testing.",
+      "points": -3
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_30",
+      "text": "Give empiric ceftriaxone without malaria testing.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_31",
+      "text": "Delay treatment until reference-laboratory PCR results return.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_32",
+      "text": "Transfuse platelets for a count of 88K without bleeding.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_33",
+      "text": "Use doxycycline monotherapy for acute falciparum malaria.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_34",
+      "text": "Use oral therapy for severe malaria when intravenous artesunate is available.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_35",
+      "text": "Use a negative rapid antigen test alone to exclude malaria.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_36",
+      "text": "Order stool ova and parasite testing and defer blood testing.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_37",
+      "text": "Give glucocorticoids for suspected cerebral malaria.",
+      "points": -2
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_38",
+      "text": "Use mefloquine as first-line treatment.",
+      "points": -1
+    },
+    {
+      "item_id": "28ce5cbebfe2aa2ffb3d8312d1b5ac06_39",
+      "text": "Prescribe ibuprofen for fever before dengue is excluded.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

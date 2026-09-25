@@ -1,0 +1,214 @@
+{
+  "case_id": "509c231a6f358c50b6089ec36b43289c",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 71-year-old retired teacher has 3 weeks of painless jaundice, dark urine, pruritus, pale stools, and 6 kg of unintentional weight loss. She was diagnosed with type 2 diabetes 5 months ago and started on metformin. She is afebrile with stable vitals. Bilirubin 9.8 mg/dL (mostly direct), alkaline phosphatase 610, AST/ALT 140/180, INR 1.4. Ultrasound shows intra- and extrahepatic ductal dilation with a 14 mm common bile duct and a poorly visualized pancreatic head. The admitting team has booked ERCP with plastic stent placement for tomorrow and wants to send a CA 19-9 to 'confirm cancer.' What evaluation and sequencing would you recommend?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_0",
+      "text": "Suspect a malignant distal biliary obstruction, most likely pancreatic head adenocarcinoma, given painless jaundice, weight loss, and new-onset diabetes.",
+      "points": 3
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_1",
+      "text": "Obtain a pancreas-protocol multiphasic contrast CT before any biliary stenting.",
+      "points": 3
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_2",
+      "text": "Refer early to a multidisciplinary pancreatic cancer team, including an HPB surgeon, before decisions about biliary drainage.",
+      "points": 3
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_3",
+      "text": "Obtain EUS-guided fine-needle aspiration or biopsy when a tissue diagnosis is needed, such as before neoadjuvant therapy or for unresectable disease.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_4",
+      "text": "Obtain chest CT to complete staging.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_5",
+      "text": "Defer preoperative biliary drainage if upfront resection can happen promptly and she has no cholangitis.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_6",
+      "text": "If biliary drainage is needed, place a self-expanding metal stent rather than a plastic stent.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_7",
+      "text": "Perform urgent biliary decompression if fever, rigors, or other signs of cholangitis develop.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_8",
+      "text": "Arrange surgery at a high-volume pancreatic surgery center if the tumor is resectable.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_9",
+      "text": "Offer germline genetic testing once pancreatic adenocarcinoma is confirmed.",
+      "points": 2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_10",
+      "text": "Obtain MRI with MRCP as a complementary study if CT findings are indeterminate.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_11",
+      "text": "Measure CA 19-9 as a baseline marker, recognizing it can be falsely elevated by biliary obstruction and should be rechecked after decompression.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_12",
+      "text": "Assess performance status and nutritional status and involve a dietitian.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_13",
+      "text": "Give vitamin K for coagulopathy related to cholestasis.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_14",
+      "text": "Treat pruritus symptomatically, for example with cholestyramine.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_15",
+      "text": "Start pancreatic enzyme replacement if symptoms of exocrine insufficiency develop.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_16",
+      "text": "Discuss prognosis and goals of care as staging results return.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_17",
+      "text": "Assess venous thromboembolism risk and provide inpatient prophylaxis.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_18",
+      "text": "Monitor glucose closely and adjust diabetes therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_19",
+      "text": "Send tumor molecular profiling if metastatic disease is found.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_20",
+      "text": "Provide return precautions for fever, rigors, or worsening abdominal pain.",
+      "points": 1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_21",
+      "text": "Obtain PET-CT routinely for staging.",
+      "points": 0
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_22",
+      "text": "Perform staging laparoscopy before resection.",
+      "points": 0
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_23",
+      "text": "Send serum IgG4 to screen for autoimmune pancreatitis.",
+      "points": 0
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_24",
+      "text": "Attribute the jaundice to drug-induced liver injury from metformin and repeat liver tests in 4 weeks.",
+      "points": -3
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_25",
+      "text": "Refer directly to hospice without staging or a tissue diagnosis.",
+      "points": -3
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_26",
+      "text": "Proceed with ERCP and plastic stent placement before staging cross-sectional imaging.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_27",
+      "text": "Perform percutaneous CT-guided biopsy of a potentially resectable pancreatic head mass.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_28",
+      "text": "Use an elevated CA 19-9 to confirm a diagnosis of pancreatic cancer.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_29",
+      "text": "Use a normal CA 19-9 to exclude pancreatic cancer.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_30",
+      "text": "Refer for cholecystectomy for presumed choledocholithiasis without imaging the pancreas.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_31",
+      "text": "Delay cross-sectional imaging until the bilirubin normalizes.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_32",
+      "text": "Start high-dose glucocorticoids empirically for presumed autoimmune pancreatitis.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_33",
+      "text": "Perform a percutaneous liver biopsy to evaluate the cholestasis.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_34",
+      "text": "Proceed to exploratory laparotomy without staging imaging.",
+      "points": -2
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_35",
+      "text": "Order a HIDA scan to evaluate the jaundice.",
+      "points": -1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_36",
+      "text": "Start empiric broad-spectrum antibiotics without signs of cholangitis.",
+      "points": -1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_37",
+      "text": "Place a percutaneous transhepatic biliary drain as first-line drainage.",
+      "points": -1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_38",
+      "text": "Order a noncontrast CT of the abdomen to evaluate the pancreas.",
+      "points": -1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_39",
+      "text": "Tell the patient she definitely has cancer before imaging and tissue confirmation.",
+      "points": -1
+    },
+    {
+      "item_id": "509c231a6f358c50b6089ec36b43289c_40",
+      "text": "Order an upper GI barium series.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

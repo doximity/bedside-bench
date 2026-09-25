@@ -1,0 +1,204 @@
+{
+  "case_id": "0089e16c4586e9467101e3c67731b9d5",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 49-year-old man is 3 years out from a deceased-donor kidney transplant (baseline creatinine 1.3) on tacrolimus 3 mg twice daily (usual trough 5 to 7 ng/mL), mycophenolate mofetil 750 mg twice daily, and prednisone 5 mg daily. Urgent care started clarithromycin 500 mg twice daily 6 days ago for sinusitis. He now has hand tremor, headache, and poor appetite. BP 158/94. Labs: creatinine 2.2, potassium 5.9, magnesium 1.3, glucose 238, tacrolimus trough 24 ng/mL. Urinalysis is bland and ultrasound shows no hydronephrosis. His sinus symptoms are much better. How would you manage this?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_0",
+      "text": "Recognize clarithromycin inhibition of CYP3A4 and P-glycoprotein as the cause of the supratherapeutic tacrolimus level and nephrotoxicity.",
+      "points": 3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_1",
+      "text": "Stop clarithromycin immediately.",
+      "points": 3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_2",
+      "text": "Hold tacrolimus until the trough falls toward target, then resume at a dose guided by levels.",
+      "points": 3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_3",
+      "text": "Repeat properly timed tacrolimus trough levels every 24 to 48 hours until back in range.",
+      "points": 3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_4",
+      "text": "Notify and coordinate with the transplant nephrology team the same day.",
+      "points": 3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_5",
+      "text": "If further antibacterial therapy is needed for sinusitis, use a non-interacting agent such as amoxicillin-clavulanate or doxycycline.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_6",
+      "text": "Continue mycophenolate and prednisone while tacrolimus is held.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_7",
+      "text": "Treat the hyperkalemia with dietary restriction and a potassium binder as needed.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_8",
+      "text": "Obtain an ECG.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_9",
+      "text": "Replete magnesium.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_10",
+      "text": "Monitor glucose and check hemoglobin A1c, treating hyperglycemia if it persists.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_11",
+      "text": "Recheck creatinine and electrolytes every 1 to 2 days until improving.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_12",
+      "text": "Pursue transplant kidney biopsy if creatinine does not return toward baseline after tacrolimus levels normalize.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_13",
+      "text": "Check donor-specific antibodies if creatinine fails to improve.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_14",
+      "text": "Check BK virus PCR if creatinine fails to improve.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_15",
+      "text": "Ensure adequate hydration and avoid other nephrotoxins.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_16",
+      "text": "If blood pressure stays elevated, favor a dihydropyridine calcium channel blocker such as amlodipine.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_17",
+      "text": "Counsel him to check with the transplant team or pharmacist before any new medication, supplement, or grapefruit product.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_18",
+      "text": "Add a tacrolimus interaction alert to his pharmacy and medication records.",
+      "points": 1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_19",
+      "text": "Assess for features of posterior reversible encephalopathy syndrome such as visual change, confusion, or seizure, and escalate urgently if present.",
+      "points": 2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_20",
+      "text": "Continue clarithromycin to finish the course while lowering the tacrolimus dose.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_21",
+      "text": "Switch clarithromycin to erythromycin.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_22",
+      "text": "Continue tacrolimus at the same dose and recheck in 2 weeks.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_23",
+      "text": "Stop all immunosuppression, including mycophenolate and prednisone.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_24",
+      "text": "Tell him to stop tacrolimus indefinitely until his next routine clinic visit.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_25",
+      "text": "Resume the full prior tacrolimus dose immediately after stopping clarithromycin regardless of the level.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_26",
+      "text": "Permanently convert tacrolimus to cyclosporine.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_27",
+      "text": "Start diltiazem or verapamil for blood pressure.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_28",
+      "text": "Start an ACE inhibitor or ARB now despite hyperkalemia and acute kidney injury.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_29",
+      "text": "Give NSAIDs for his headache.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_30",
+      "text": "Order contrast-enhanced CT to evaluate the acute kidney injury.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_31",
+      "text": "Perform an immediate allograft biopsy before correcting the tacrolimus level.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_32",
+      "text": "Treat empirically for acute rejection with pulse methylprednisolone.",
+      "points": -3
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_33",
+      "text": "Start plasmapheresis empirically.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_34",
+      "text": "Give intravenous immunoglobulin empirically.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_35",
+      "text": "Start carbamazepine for the tremor.",
+      "points": -2
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_36",
+      "text": "Increase the mycophenolate dose to compensate for holding tacrolimus.",
+      "points": -1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_37",
+      "text": "Give large-volume intravenous fluids to flush the kidney despite hypertension.",
+      "points": -1
+    },
+    {
+      "item_id": "0089e16c4586e9467101e3c67731b9d5_38",
+      "text": "Use a 2-hour post-dose tacrolimus level to guide dosing.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

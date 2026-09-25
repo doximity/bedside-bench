@@ -1,0 +1,209 @@
+{
+  "case_id": "42f09fb54f343e3f9db69ff7423d2bdb",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 57-year-old woman with alcohol-associated cirrhosis, Child-Pugh B, whose last drink was 3 weeks ago, presents with two episodes of hematemesis and melena since this morning. HR 118, BP 94/58, alert. Hemoglobin 7.4 g/dL (baseline 10.5), platelets 62,000, INR 1.8, creatinine 1.3. She takes propranolol 20 mg twice daily and spironolactone. The night team ordered 4 units of packed red cells and 4 units of FFP 'to correct the INR,' started an IV pantoprazole drip, and plans endoscopy tomorrow morning when the GI fellow is in. What diagnostic and management steps do you recommend?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_0",
+      "text": "Presume variceal hemorrhage and start an intravenous vasoactive agent, such as octreotide, immediately.",
+      "points": 3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_1",
+      "text": "Start antibiotic prophylaxis, such as intravenous ceftriaxone.",
+      "points": 3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_2",
+      "text": "Use a restrictive transfusion strategy, transfusing to a hemoglobin of about 7-8 g/dL.",
+      "points": 3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_3",
+      "text": "Perform upper endoscopy within 12 hours of presentation once she is resuscitated.",
+      "points": 3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_4",
+      "text": "Perform endoscopic band ligation if bleeding esophageal varices are confirmed.",
+      "points": 3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_5",
+      "text": "Place two large-bore IVs and send a type and crossmatch.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_6",
+      "text": "Admit to an intensive care or step-down unit.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_7",
+      "text": "Assess airway protection and intubate before endoscopy if hematemesis is massive or mental status declines.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_8",
+      "text": "Hold propranolol during the acute bleed while she is hypotensive.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_9",
+      "text": "Hold spironolactone and other diuretics during the acute bleed.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_10",
+      "text": "Consider preemptive TIPS within 72 hours if she meets high-risk criteria, such as Child-Pugh C or Child-Pugh B with active bleeding at endoscopy.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_11",
+      "text": "Perform a diagnostic paracentesis if ascites is present to exclude spontaneous bacterial peritonitis.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_12",
+      "text": "Give thiamine given her alcohol use history.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_13",
+      "text": "After stabilization, start secondary prophylaxis with a nonselective beta-blocker and serial band ligation.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_14",
+      "text": "Refer for alcohol use disorder treatment.",
+      "points": 2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_15",
+      "text": "Continue the IV proton pump inhibitor until endoscopy defines the source, then stop it if no peptic lesion is found.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_16",
+      "text": "Give intravenous erythromycin before endoscopy to improve visualization.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_17",
+      "text": "Use balloon tamponade as a temporary bridge if bleeding is refractory to endoscopic therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_18",
+      "text": "Monitor for hepatic encephalopathy and start lactulose if it develops.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_19",
+      "text": "Monitor renal function closely for acute kidney injury or hepatorenal syndrome.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_20",
+      "text": "Calculate MELD and Child-Pugh scores to guide risk stratification.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_21",
+      "text": "Evaluate for gastric varices and involve an experienced team for cyanoacrylate injection or BRTO if bleeding cardiofundal varices are found.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_22",
+      "text": "Obtain Doppler ultrasound to evaluate for portal vein thrombosis and hepatocellular carcinoma.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_23",
+      "text": "Refer to hepatology for liver transplant evaluation when appropriate.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_24",
+      "text": "Use viscoelastic testing, if available, rather than INR to guide any hemostatic product use.",
+      "points": 1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_25",
+      "text": "Transfuse to a hemoglobin target above 10 g/dL.",
+      "points": -3
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_26",
+      "text": "Transfuse fresh frozen plasma to correct the INR.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_27",
+      "text": "Postpone endoscopy until the next morning.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_28",
+      "text": "Continue propranolol while she is hypotensive.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_29",
+      "text": "Give tranexamic acid.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_30",
+      "text": "Give aggressive crystalloid resuscitation to normalize blood pressure.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_31",
+      "text": "Withhold antibiotic prophylaxis because she has no fever.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_32",
+      "text": "Give recombinant factor VIIa.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_33",
+      "text": "Wait for endoscopic confirmation before starting octreotide.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_34",
+      "text": "Place balloon tamponade as first-line therapy before endoscopy.",
+      "points": -2
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_35",
+      "text": "Transfuse platelets routinely to a count above 100,000.",
+      "points": -1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_36",
+      "text": "Perform routine nasogastric lavage.",
+      "points": -1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_37",
+      "text": "Use sclerotherapy rather than band ligation as first-line endoscopic therapy.",
+      "points": -1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_38",
+      "text": "Obtain CT angiography before endoscopy as the initial diagnostic step.",
+      "points": -1
+    },
+    {
+      "item_id": "42f09fb54f343e3f9db69ff7423d2bdb_39",
+      "text": "Continue spironolactone during the acute bleed.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

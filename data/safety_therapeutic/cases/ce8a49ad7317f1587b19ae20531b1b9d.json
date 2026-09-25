@@ -1,0 +1,189 @@
+{
+  "case_id": "ce8a49ad7317f1587b19ae20531b1b9d",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 28-year-old woman who injects fentanyl was admitted with fever, and 2 of 2 blood cultures grew MSSA 18 hours ago. The ED started vancomycin because her chart lists a \"penicillin allergy\"; she says she had an itchy rash with amoxicillin as a child. She has a tender, fluctuant left antecubital abscess and a soft new systolic murmur, with no back pain. Creatinine is 0.8. She is in opioid withdrawal and says she wants to leave against medical advice. The primary team plans to \"finish two weeks of vancomycin and discharge with a PICC.\" What would you recommend?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_0",
+      "text": "Switch definitive therapy from vancomycin to cefazolin 2 g intravenously every 8 hours.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_1",
+      "text": "Recognize that a remote childhood itchy rash is low-risk and that cefazolin can be given safely because its side chain differs from amoxicillin.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_2",
+      "text": "Plan formal penicillin allergy delabeling, such as a supervised amoxicillin challenge, once she is stable.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_3",
+      "text": "Repeat blood cultures every 24 to 48 hours until documented clearance.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_4",
+      "text": "Obtain transesophageal echocardiography given the new murmur and injection drug use, after or in addition to transthoracic echocardiography.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_5",
+      "text": "Arrange incision and drainage of the antecubital abscess with culture.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_6",
+      "text": "Obtain an infectious diseases consultation.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_7",
+      "text": "Count antibiotic duration from the first negative blood culture, with at least 4 to 6 weeks if endocarditis or other complicated infection is confirmed.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_8",
+      "text": "Evaluate for metastatic foci with targeted imaging if bacteremia persists or new localizing symptoms develop.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_9",
+      "text": "Treat opioid withdrawal promptly with buprenorphine or methadone and involve addiction medicine.",
+      "points": 3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_10",
+      "text": "Continue medication for opioid use disorder at discharge and provide a naloxone kit.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_11",
+      "text": "Treat acute pain adequately, including additional short-acting opioids on top of opioid agonist therapy when needed.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_12",
+      "text": "Screen for HIV, hepatitis C, and hepatitis B.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_13",
+      "text": "Provide harm-reduction counseling and linkage to syringe services and sterile supplies.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_14",
+      "text": "Discuss completion options with her, including oral step-down or long-acting lipoglycopeptide strategies selected with infectious diseases if a full intravenous course is not feasible.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_15",
+      "text": "Consult cardiothoracic surgery if there is severe valvular regurgitation, heart failure, a large vegetation, or embolic events.",
+      "points": 2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_16",
+      "text": "Obtain a pregnancy test.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_17",
+      "text": "Monitor CBC and renal function weekly while on intravenous cefazolin.",
+      "points": 1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_18",
+      "text": "Continue vancomycin for the entire course.",
+      "points": -3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_19",
+      "text": "Discharge after 14 days without echocardiography or documented culture clearance.",
+      "points": -3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_20",
+      "text": "Add gentamicin for synergy.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_21",
+      "text": "Add rifampin routinely.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_22",
+      "text": "Switch to oral cephalexin after 3 days of intravenous therapy.",
+      "points": -3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_23",
+      "text": "Use daptomycin first-line instead of cefazolin for this MSSA bacteremia.",
+      "points": -1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_24",
+      "text": "Withhold opioid withdrawal treatment until she agrees to complete antibiotic therapy.",
+      "points": -3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_25",
+      "text": "Treat withdrawal only with clonidine and avoid opioid agonists.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_26",
+      "text": "Require abstinence before offering medication for opioid use disorder.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_27",
+      "text": "Require penicillin skin testing before giving cefazolin.",
+      "points": -1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_28",
+      "text": "Use ceftriaxone as definitive monotherapy for the MSSA bacteremia.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_29",
+      "text": "Treat the abscess with antibiotics alone without drainage.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_30",
+      "text": "Count therapy duration from the admission date rather than from the first negative culture.",
+      "points": -1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_31",
+      "text": "Stop the endocarditis evaluation after a negative transthoracic echocardiogram despite high pretest probability.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_32",
+      "text": "If she leaves against medical advice, discharge her without oral antibiotics, opioid agonist therapy, naloxone, or follow-up.",
+      "points": -3
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_33",
+      "text": "Use physical restraints or a security hold to keep her from leaving despite intact decision-making capacity.",
+      "points": -2
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_34",
+      "text": "Use serial procalcitonin levels to guide antibiotic duration.",
+      "points": -1
+    },
+    {
+      "item_id": "ce8a49ad7317f1587b19ae20531b1b9d_35",
+      "text": "Start empiric anticoagulation to prevent embolic events from suspected endocarditis.",
+      "points": -2
+    }
+  ],
+  "split": "train"
+}

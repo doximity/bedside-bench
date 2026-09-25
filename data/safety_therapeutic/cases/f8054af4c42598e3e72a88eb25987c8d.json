@@ -1,0 +1,199 @@
+{
+  "case_id": "f8054af4c42598e3e72a88eb25987c8d",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 59-year-old delivery driver came to clinic with a pounding headache and feeling jittery and sweaty since yesterday. He takes clonidine 0.3 mg three times daily, amlodipine 10 mg, and chlorthalidone 25 mg for long-standing hypertension, and ran out of clonidine three days ago when his pharmacy closed. BP is 212/118 on repeat after rest, HR 108. He has no chest pain, dyspnea, focal weakness, visual change, or confusion, and fundi show no papilledema or hemorrhages. ECG shows LVH without acute changes, creatinine is at his baseline of 1.2, and urinalysis is bland. My resident wants to send him to the ED for IV labetalol. How would you manage this?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_0",
+      "text": "Classify this as severe hypertension without acute target-organ damage rather than a hypertensive emergency.",
+      "points": 3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_1",
+      "text": "Recognize abrupt clonidine withdrawal as the likely cause of the rebound hypertension and adrenergic symptoms.",
+      "points": 3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_2",
+      "text": "Restart clonidine orally at his usual dose in clinic.",
+      "points": 3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_3",
+      "text": "Lower blood pressure gradually over hours to days rather than normalizing it immediately.",
+      "points": 3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_4",
+      "text": "Recheck blood pressure after a period of quiet rest with an appropriately sized cuff.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_5",
+      "text": "Observe him in clinic for one to several hours to confirm the response before discharge.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_6",
+      "text": "Ensure the clonidine prescription is filled today and counsel him never to stop it abruptly.",
+      "points": 3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_7",
+      "text": "Schedule follow-up within one to three days to recheck blood pressure.",
+      "points": 2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_8",
+      "text": "Check a basic metabolic panel including potassium given chlorthalidone use.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_9",
+      "text": "Start home blood pressure monitoring with a validated cuff.",
+      "points": 2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_10",
+      "text": "Give return precautions for chest pain, neurologic symptoms, vision change, or dyspnea.",
+      "points": 2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_11",
+      "text": "Add an ACE inhibitor or ARB at follow-up since he is not on a renin-angiotensin system blocker.",
+      "points": 2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_12",
+      "text": "Consider a long-term plan to replace clonidine with agents that carry less rebound risk, such as spironolactone.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_13",
+      "text": "If clonidine is eventually discontinued, taper it gradually over one to two weeks while replacement therapy is established.",
+      "points": 2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_14",
+      "text": "Consider a transdermal clonidine patch if adherence or dosing gaps are a recurring problem.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_15",
+      "text": "Screen for secondary causes of resistant hypertension such as primary aldosteronism and sleep apnea once stable.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_16",
+      "text": "Ask about NSAIDs, decongestants, stimulants, or other drugs that raise blood pressure.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_17",
+      "text": "Ask about alcohol, cocaine, or stimulant use that could mimic or worsen adrenergic symptoms.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_18",
+      "text": "Advise him not to drive commercially until his blood pressure is controlled and symptoms resolve.",
+      "points": 1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_19",
+      "text": "Send him to the emergency department for intravenous labetalol or other IV antihypertensives.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_20",
+      "text": "Give sublingual or immediate-release nifedipine.",
+      "points": -3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_21",
+      "text": "Start a beta-blocker such as metoprolol alone for the tachycardia without restoring the alpha-2 agonist.",
+      "points": -3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_22",
+      "text": "Aim to lower blood pressure below 140/90 during the clinic visit.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_23",
+      "text": "Give intravenous or intramuscular hydralazine in clinic.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_24",
+      "text": "Discontinue clonidine permanently today and replace it with a new agent.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_25",
+      "text": "Restart clonidine at double his previous dose.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_26",
+      "text": "Order a head CT despite the absence of neurologic symptoms.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_27",
+      "text": "Order serial troponins routinely despite no chest pain and a nonacute ECG.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_28",
+      "text": "Admit him to the ICU.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_29",
+      "text": "Give an intravenous loop diuretic for rapid blood pressure reduction.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_30",
+      "text": "Discharge him without restarting clonidine and with follow-up in one month.",
+      "points": -3
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_31",
+      "text": "Give repeated doses of short-acting oral agents to reach a target blood pressure within an hour.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_32",
+      "text": "Attribute his symptoms to anxiety and treat with a benzodiazepine alone.",
+      "points": -2
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_33",
+      "text": "Label him as treatment-resistant and add a fourth agent without addressing the lapse in clonidine.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_34",
+      "text": "Order an urgent pheochromocytoma workup before restarting clonidine.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_35",
+      "text": "Stop chlorthalidone.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_36",
+      "text": "Clear him to resume commercial driving immediately.",
+      "points": -1
+    },
+    {
+      "item_id": "f8054af4c42598e3e72a88eb25987c8d_37",
+      "text": "Order a renal artery duplex ultrasound today.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

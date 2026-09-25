@@ -1,0 +1,209 @@
+{
+  "case_id": "6399b82642d7627bd3ceb2102c5629c4",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 66-year-old man had a drug-eluting stent placed in his proximal LAD 10 weeks ago for an NSTEMI. He has type 2 diabetes, a prior TIA, and stage 3a CKD. He takes aspirin 81 mg, ticagrelor 90 mg twice daily, atorvastatin 80 mg, metoprolol succinate, and empagliflozin. He has a symptomatic but easily reducible inguinal hernia, and the surgeon wants to repair it next week. The surgeon has asked us to stop both antiplatelets 7 days beforehand and 'bridge with Lovenox.' He has no cardiac symptoms, walks 2 miles daily, and his post-MI echo showed an EF of 50%. What preoperative evaluation and recommendations do you suggest?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_0",
+      "text": "Recommend postponing the elective hernia repair until dual antiplatelet therapy can be safely shortened, ideally 12 months and at minimum 6 months after PCI for acute coronary syndrome.",
+      "points": 3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_1",
+      "text": "Advise against stopping ticagrelor now because stent thrombosis risk is highest in the early months after PCI for acute coronary syndrome.",
+      "points": 3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_2",
+      "text": "Continue aspirin without interruption through the eventual surgery unless the surgeon judges bleeding risk prohibitive.",
+      "points": 3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_3",
+      "text": "Talk directly with the surgeon and the interventional cardiologist to agree on the timing and antiplatelet plan.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_4",
+      "text": "Ask the surgeon whether there is any incarceration, obstruction, or strangulation concern that would make the repair urgent.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_5",
+      "text": "Teach the patient hernia warning signs, such as irreducibility, severe pain, vomiting, or skin changes, and to seek emergency care if they occur.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_6",
+      "text": "If surgery cannot be deferred, hold ticagrelor for about 3-5 days rather than 7, continue aspirin, and resume ticagrelor within 24-48 hours after hemostasis.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_7",
+      "text": "Document that his functional capacity is above 4 METs and that no preoperative stress testing is indicated.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_8",
+      "text": "Continue the beta-blocker through the perioperative period.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_9",
+      "text": "Hold empagliflozin for about 3 days before surgery because of euglycemic ketoacidosis risk.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_10",
+      "text": "Tell the patient in writing never to stop either antiplatelet agent without speaking to his cardiologist.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_11",
+      "text": "Plan to reevaluate at 6-12 months after PCI to schedule the repair once ticagrelor can be discontinued.",
+      "points": 2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_12",
+      "text": "Continue high-intensity statin therapy perioperatively.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_13",
+      "text": "Estimate perioperative cardiac risk with a validated tool such as the Revised Cardiac Risk Index.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_14",
+      "text": "Obtain a preoperative ECG given known coronary disease.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_15",
+      "text": "Check baseline creatinine, complete blood count, and glucose control before surgery.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_16",
+      "text": "If surgery must happen early, do it at a hospital with on-site PCI capability.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_17",
+      "text": "Plan postoperative ischemia surveillance, including troponin testing if symptoms or hemodynamic changes occur.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_18",
+      "text": "Offer interim hernia symptom measures, such as activity modification, while surgery is deferred.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_19",
+      "text": "Reinforce secondary prevention, including glycemic and blood pressure control and tobacco avoidance.",
+      "points": 1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_20",
+      "text": "Stop both aspirin and ticagrelor 7 days before surgery next week.",
+      "points": -3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_21",
+      "text": "Bridge the antiplatelet interruption with enoxaparin as protection against stent thrombosis.",
+      "points": -3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_22",
+      "text": "Switch ticagrelor to prasugrel before surgery.",
+      "points": -3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_23",
+      "text": "Plan spinal or epidural anesthesia without holding ticagrelor for the recommended interval.",
+      "points": -3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_24",
+      "text": "Refuse surgery even if the hernia becomes incarcerated because he is on dual antiplatelet therapy.",
+      "points": -3
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_25",
+      "text": "Tell the surgeon that a low-risk operation makes antiplatelet interruption safe at any time after PCI.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_26",
+      "text": "Order a pharmacologic stress test before the hernia repair despite good functional capacity.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_27",
+      "text": "Refer for repeat coronary angiography before surgery in the absence of symptoms.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_28",
+      "text": "Stop the beta-blocker the day before surgery.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_29",
+      "text": "Delay restarting antiplatelet therapy for 1-2 weeks after surgery.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_30",
+      "text": "Increase aspirin to 325 mg daily while he continues ticagrelor.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_31",
+      "text": "Tell the patient he may stop his antiplatelets on his own if he notices bruising.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_32",
+      "text": "Prescribe ketorolac or another NSAID for postoperative pain.",
+      "points": -2
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_33",
+      "text": "Order a routine preoperative echocardiogram.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_34",
+      "text": "Order preoperative coronary CT angiography.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_35",
+      "text": "Stop atorvastatin before surgery.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_36",
+      "text": "Continue empagliflozin through the morning of surgery.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_37",
+      "text": "Give prophylactic platelet transfusion before surgery.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_38",
+      "text": "Order carotid ultrasound before surgery for a remote TIA without new neurologic symptoms.",
+      "points": -1
+    },
+    {
+      "item_id": "6399b82642d7627bd3ceb2102c5629c4_39",
+      "text": "Use routine platelet function testing to decide when surgery can proceed.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

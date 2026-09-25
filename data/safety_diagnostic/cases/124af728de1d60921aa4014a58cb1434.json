@@ -1,0 +1,209 @@
+{
+  "case_id": "124af728de1d60921aa4014a58cb1434",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "I'm seeing a 61-year-old man in the ED with poorly controlled hypertension and a bicuspid aortic valve noted on an echo several years ago. About 90 minutes ago he developed abrupt, severe chest pain he describes as tearing, now radiating between his shoulder blades. BP is 182/96 in the right arm and 148/80 in the left, HR 98, SpO2 97%. There is a soft early diastolic murmur at the left sternal border that nobody has documented before. ECG shows LVH with 1 mm ST depression in V4-V6, and the first high-sensitivity troponin is mildly elevated. The ED team has labeled it an NSTEMI and wants to load ticagrelor and start a heparin drip before sending him to the cath lab. Should we proceed, and what should the workup be?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_0",
+      "text": "Treat acute aortic dissection as the leading can't-miss diagnosis given tearing pain radiating to the back, an inter-arm blood pressure differential, a new aortic regurgitation murmur, and a bicuspid aortic valve.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_1",
+      "text": "Withhold antiplatelet loading and anticoagulation until acute aortic dissection has been excluded.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_2",
+      "text": "Obtain emergent CT angiography of the chest, abdomen, and pelvis, ECG-gated when available, to confirm or exclude dissection and define its extent.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_3",
+      "text": "Perform bedside transthoracic echocardiography to look for aortic root dilation, an intimal flap, aortic regurgitation, and pericardial effusion while definitive imaging is arranged.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_4",
+      "text": "Use transesophageal echocardiography as the definitive study if the patient becomes too unstable to leave the resuscitation area or CT angiography cannot be performed.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_5",
+      "text": "Start an intravenous beta-blocker such as esmolol or labetalol to target a heart rate of about 60 beats per minute to reduce aortic wall stress.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_6",
+      "text": "Add an intravenous vasodilator such as nicardipine or nitroprusside after heart rate control if needed to bring systolic pressure to roughly 100-120 mmHg.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_7",
+      "text": "Provide intravenous opioid analgesia to control pain and the associated sympathetic surge.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_8",
+      "text": "Measure blood pressure in both arms and use the higher reading to guide antihypertensive therapy.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_9",
+      "text": "Activate cardiothoracic surgery emergently if a type A (ascending aorta) dissection is confirmed.",
+      "points": 3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_10",
+      "text": "Obtain vascular or endovascular surgery consultation if a type B dissection is found with malperfusion, rupture, refractory pain, or uncontrolled hypertension.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_11",
+      "text": "Admit to an intensive care setting with continuous monitoring and an arterial line for blood pressure titration.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_12",
+      "text": "Assess serially for malperfusion, including neurologic deficits, pulse deficits, abdominal pain, rising lactate, and declining renal function.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_13",
+      "text": "Examine for pericardial tamponade, including hypotension, pulsus paradoxus, and jugular venous distension.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_14",
+      "text": "Send type and crossmatch, complete blood count, coagulation studies, creatinine, and lactate.",
+      "points": 1
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_15",
+      "text": "Obtain a portable chest radiograph for mediastinal widening while recognizing that a normal film does not exclude dissection.",
+      "points": 1
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_16",
+      "text": "Interpret the mild troponin elevation and lateral ST depression cautiously as possibly secondary to dissection, LVH strain, or coronary ostial involvement rather than proof of primary acute coronary syndrome.",
+      "points": 2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_17",
+      "text": "Document a high pretest probability using the aortic dissection detection risk score.",
+      "points": 1
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_18",
+      "text": "Place a urinary catheter to monitor urine output as a marker of renal perfusion during blood pressure lowering.",
+      "points": 1
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_19",
+      "text": "Recommend aortic imaging screening of first-degree relatives after stabilization given bicuspid aortopathy.",
+      "points": 1
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_20",
+      "text": "Send a repeat high-sensitivity troponin at the usual serial interval.",
+      "points": 0
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_21",
+      "text": "Obtain a fasting lipid panel during the admission.",
+      "points": 0
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_22",
+      "text": "Load ticagrelor or another P2Y12 inhibitor before aortic dissection has been excluded.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_23",
+      "text": "Start an unfractionated heparin infusion before aortic dissection has been excluded.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_24",
+      "text": "Administer systemic thrombolytic therapy for a presumed myocardial infarction.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_25",
+      "text": "Send the patient directly for coronary angiography without first imaging the aorta.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_26",
+      "text": "Administer a glycoprotein IIb/IIIa inhibitor as part of an NSTEMI pathway.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_27",
+      "text": "Give 325 mg of chewed aspirin before dissection has been excluded.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_28",
+      "text": "Start a vasodilator such as nitroprusside or hydralazine before achieving beta-blockade, risking reflex tachycardia.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_29",
+      "text": "Use a negative D-dimer to exclude aortic dissection in this high-probability presentation.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_30",
+      "text": "Rely on a normal chest radiograph to rule out aortic dissection.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_31",
+      "text": "Delay definitive aortic imaging to wait for serial troponin results.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_32",
+      "text": "Rely on transthoracic echocardiography alone to exclude aortic dissection.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_33",
+      "text": "Order a noncontrast chest CT alone to evaluate the aorta.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_34",
+      "text": "Attribute the diastolic murmur to the known bicuspid valve and not investigate further.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_35",
+      "text": "Allow systolic blood pressure to remain above 160 mmHg while awaiting imaging to preserve perfusion.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_36",
+      "text": "Transfer the patient to an unmonitored floor bed while awaiting imaging.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_37",
+      "text": "Wait for a formal radiology attending read the next morning before involving cardiothoracic surgery.",
+      "points": -2
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_38",
+      "text": "Discharge the patient with an outpatient stress test if the second troponin is flat.",
+      "points": -3
+    },
+    {
+      "item_id": "124af728de1d60921aa4014a58cb1434_39",
+      "text": "Titrate blood pressure using only the left-arm cuff readings.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

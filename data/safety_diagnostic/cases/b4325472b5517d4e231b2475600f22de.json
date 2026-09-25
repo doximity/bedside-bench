@@ -1,0 +1,209 @@
+{
+  "case_id": "b4325472b5517d4e231b2475600f22de",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "79-year-old woman weighing 48 kg, on hydrochlorothiazide 25 mg for hypertension, started sertraline 50 mg five weeks ago for depression after her husband died. Her daughter says she has been eating mostly tea and toast. Over three days she has become increasingly confused and unsteady and fell once at home without hitting her head hard. No seizures. In the ED: sodium 117 mEq/L (136 three months ago), potassium 3.1, glucose 98, serum osmolality 248, urine osmolality 410, urine sodium 38. She appears euvolemic. The ED team has started 3% saline and asks how fast to correct and what else to do.\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_0",
+      "text": "Give a 100 to 150 mL bolus of 3% saline for her moderately severe symptoms, repeating once if symptoms persist, with sodium rechecked after each bolus.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_1",
+      "text": "Target a sodium rise of about 4 to 6 mEq/L in the first 24 hours and do not exceed 8 mEq/L in any 24-hour period.",
+      "points": 3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_2",
+      "text": "Check serum sodium every 2 to 4 hours during active correction.",
+      "points": 3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_3",
+      "text": "Recognize her high risk for osmotic demyelination: hypokalemia, malnutrition, low body weight, advanced age, and thiazide use.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_4",
+      "text": "Stop hydrochlorothiazide.",
+      "points": 3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_5",
+      "text": "Hold sertraline as a likely contributor through SIADH.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_6",
+      "text": "Replete potassium, recognizing that potassium repletion also raises serum sodium.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_7",
+      "text": "Monitor urine output closely, since a sudden water diuresis signals impending overcorrection.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_8",
+      "text": "Consider proactive or reactive desmopressin, given with controlled hypertonic saline, to prevent overcorrection in this high-risk patient.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_9",
+      "text": "Relower sodium with 5% dextrose in water, with or without desmopressin, if the correction limit is exceeded.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_10",
+      "text": "Admit to a monitored setting capable of frequent laboratory checks.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_11",
+      "text": "Check TSH and a morning cortisol to exclude hypothyroidism and adrenal insufficiency.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_12",
+      "text": "Obtain a head CT given the fall and altered mental status.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_13",
+      "text": "Document thiazide-associated hyponatremia as an adverse reaction and avoid rechallenge.",
+      "points": 2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_14",
+      "text": "Institute fall precautions.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_15",
+      "text": "Give thiamine given her poor nutritional intake.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_16",
+      "text": "Review the full medication list for other hyponatremia-causing drugs.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_17",
+      "text": "Confirm a normal serum glucose to exclude translocational hyponatremia.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_18",
+      "text": "Reassess volume status serially, recognizing thiazide-related solute depletion can mimic SIADH.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_19",
+      "text": "If antidepressant therapy is still needed, choose an agent with lower hyponatremia risk and monitor sodium after starting it.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_20",
+      "text": "Arrange dietitian input to increase dietary protein and solute intake.",
+      "points": 1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_21",
+      "text": "Aim to normalize the serum sodium within 24 hours.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_22",
+      "text": "Run a continuous 3% saline infusion without frequent sodium checks.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_23",
+      "text": "Correct sodium by 12 mEq/L or more in the first 24 hours.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_24",
+      "text": "Start tolvaptan alongside hypertonic saline.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_25",
+      "text": "Recheck sodium only once the next morning.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_26",
+      "text": "Discharge home with outpatient laboratory follow-up.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_27",
+      "text": "Allow sodium to keep rising once overcorrection is detected.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_28",
+      "text": "Give a 500 mL bolus of 3% saline.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_29",
+      "text": "Attribute the confusion to dementia and not treat the hyponatremia.",
+      "points": -3
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_30",
+      "text": "Give 2 liters of 0.9% saline rapidly.",
+      "points": -2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_31",
+      "text": "Continue hydrochlorothiazide.",
+      "points": -2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_32",
+      "text": "Continue sertraline at the current dose.",
+      "points": -2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_33",
+      "text": "Use fluid restriction alone as initial therapy despite neurologic symptoms.",
+      "points": -2
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_34",
+      "text": "Use salt tablets and furosemide as the sole initial therapy.",
+      "points": -1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_35",
+      "text": "Replete potassium without accounting for its effect on serum sodium.",
+      "points": -1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_36",
+      "text": "Order an immediate brain MRI to screen for osmotic demyelination.",
+      "points": -1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_37",
+      "text": "Start demeclocycline.",
+      "points": -1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_38",
+      "text": "Use benzodiazepines to manage the confusion.",
+      "points": -1
+    },
+    {
+      "item_id": "b4325472b5517d4e231b2475600f22de_39",
+      "text": "Switch sertraline immediately to another SSRI such as citalopram.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

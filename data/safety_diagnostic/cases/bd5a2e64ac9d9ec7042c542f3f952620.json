@@ -1,0 +1,209 @@
+{
+  "case_id": "bd5a2e64ac9d9ec7042c542f3f952620",
+  "benchmark": "safety_diagnostic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "36-year-old man diagnosed with HIV two weeks ago (CD4 42 cells/uL, viral load 280,000 copies/mL), not yet on antiretroviral therapy, started on trimethoprim-sulfamethoxazole prophylaxis at diagnosis. He now reports ten days of worsening headache, nausea, low-grade fevers, and intermittent blurred vision. He is alert and oriented with mild neck stiffness and no focal neurologic deficits. Temperature 38.1 C, BP 128/80. His primary care physician plans to start antiretroviral therapy in clinic today and prescribe sumatriptan for the headaches. Is that the right plan?\n\nProvide a comprehensive management plan including appropriate diagnostic workup, referrals, procedures if indicated, follow-up, and actions to avoid.",
+  "rubric_items": [
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_0",
+      "text": "Suspect cryptococcal meningitis and arrange urgent same-day evaluation.",
+      "points": 3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_1",
+      "text": "Perform a lumbar puncture with opening pressure measurement.",
+      "points": 3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_2",
+      "text": "Treat induction with liposomal amphotericin B plus flucytosine, or an equivalent guideline regimen.",
+      "points": 3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_3",
+      "text": "Perform therapeutic lumbar punctures to reduce elevated opening pressure (25 cm H2O or more).",
+      "points": 3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_4",
+      "text": "Defer antiretroviral therapy until about four to six weeks after starting antifungal therapy.",
+      "points": 3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_5",
+      "text": "Check serum cryptococcal antigen.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_6",
+      "text": "Send CSF cell count, protein, glucose, Gram stain, bacterial and fungal cultures, and cryptococcal antigen.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_7",
+      "text": "Obtain head CT or MRI before lumbar puncture given advanced immunosuppression.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_8",
+      "text": "Monitor potassium, magnesium, and creatinine and give pre-hydration with amphotericin B.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_9",
+      "text": "Continue trimethoprim-sulfamethoxazole prophylaxis.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_10",
+      "text": "Arrange an ophthalmologic exam for the visual symptoms, including assessment for papilledema.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_11",
+      "text": "Follow induction with fluconazole consolidation and then maintenance therapy.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_12",
+      "text": "Obtain infectious diseases consultation.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_13",
+      "text": "Admit to the hospital.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_14",
+      "text": "Assess mental status serially and repeat lumbar puncture for recurrent headache or signs of raised pressure.",
+      "points": 2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_15",
+      "text": "Send CSF for additional pathogens such as mycobacteria, syphilis, and herpesviruses as indicated.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_16",
+      "text": "Obtain blood cultures, including fungal cultures.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_17",
+      "text": "Monitor flucytosine levels and CBC.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_18",
+      "text": "Screen for other opportunistic infections and coinfections, including tuberculosis, toxoplasma IgG, syphilis, and hepatitis B.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_19",
+      "text": "Review fluconazole interactions when selecting antiretroviral therapy.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_20",
+      "text": "Monitor for immune reconstitution inflammatory syndrome after antiretroviral therapy starts.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_21",
+      "text": "Repeat lumbar puncture at about two weeks to document CSF sterilization.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_22",
+      "text": "Provide adherence counseling and linkage to HIV care.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_23",
+      "text": "Provide antiemetics and non-NSAID analgesia.",
+      "points": 1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_24",
+      "text": "Start antiretroviral therapy today.",
+      "points": -3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_25",
+      "text": "Discharge with sumatriptan for presumed migraine.",
+      "points": -3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_26",
+      "text": "Treat with an echinocandin such as caspofungin.",
+      "points": -3
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_27",
+      "text": "Use fluconazole monotherapy for induction when amphotericin B is available.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_28",
+      "text": "Use acetazolamide to lower intracranial pressure.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_29",
+      "text": "Give adjunctive dexamethasone.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_30",
+      "text": "Skip the opening pressure measurement.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_31",
+      "text": "Stop trimethoprim-sulfamethoxazole.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_32",
+      "text": "Use a negative India ink stain alone to exclude cryptococcal infection.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_33",
+      "text": "Delay antifungal therapy until the CSF culture grows Cryptococcus.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_34",
+      "text": "Treat empirically for bacterial meningitis only.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_35",
+      "text": "Skip lumbar puncture once serum cryptococcal antigen is positive.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_36",
+      "text": "Give amphotericin B deoxycholate without hydration or electrolyte monitoring.",
+      "points": -2
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_37",
+      "text": "Give mannitol for elevated intracranial pressure.",
+      "points": -1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_38",
+      "text": "Place a ventriculoperitoneal shunt as first-line pressure management.",
+      "points": -1
+    },
+    {
+      "item_id": "bd5a2e64ac9d9ec7042c542f3f952620_39",
+      "text": "Start empiric toxoplasmosis therapy without neuroimaging.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

@@ -1,0 +1,184 @@
+{
+  "case_id": "74053496cf62ec37fdb0a5ffd6d31472",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 67-year-old man has extensive plaque psoriasis (18% body surface area, including scalp and palms) with nail pitting, and topical clobetasol plus calcipotriene have not controlled it. He has CKD stage 3b (eGFR 38), drinks 4 to 5 beers daily, and has obesity with steatotic liver disease and an ALT of 58 U/L. He takes trimethoprim-sulfamethoxazole nightly for recurrent UTI prophylaxis and lisinopril for hypertension. He reports some morning stiffness in his fingers. TB and hepatitis screening have never been done. His primary care clinician plans to start methotrexate 15 mg weekly and asks for your input. What systemic therapy do you recommend, and how should it be implemented?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_0",
+      "text": "Advise against methotrexate given CKD stage 3b, heavy alcohol use, liver disease, and trimethoprim-sulfamethoxazole use.",
+      "points": 3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_1",
+      "text": "Recommend a biologic such as an IL-23, IL-17, or TNF inhibitor as preferred systemic therapy.",
+      "points": 3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_2",
+      "text": "Screen for latent tuberculosis with an interferon-gamma release assay before starting a biologic.",
+      "points": 3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_3",
+      "text": "Screen for hepatitis B surface antigen, hepatitis B core antibody, and hepatitis C before a biologic.",
+      "points": 3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_4",
+      "text": "Offer HIV screening before immunosuppression.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_5",
+      "text": "Update inactivated vaccines such as influenza, pneumococcal, recombinant zoster, and COVID-19 before immunosuppression.",
+      "points": 2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_6",
+      "text": "Consider an IL-23 inhibitor such as guselkumab or risankizumab given favorable safety and infrequent dosing.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_7",
+      "text": "Assess for psoriatic arthritis and refer to rheumatology given finger stiffness and nail disease.",
+      "points": 2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_8",
+      "text": "Counsel alcohol reduction and offer treatment support.",
+      "points": 2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_9",
+      "text": "Screen for cardiometabolic comorbidities including lipids, hemoglobin A1c, and blood pressure.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_10",
+      "text": "Counsel on weight loss because it can improve psoriasis response.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_11",
+      "text": "Reassess the need for ongoing UTI prophylaxis with his urologist.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_12",
+      "text": "Continue topical therapy as an adjunct for scalp and localized plaques.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_13",
+      "text": "Screen for depression.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_14",
+      "text": "Reassess response at 12 to 16 weeks using body surface area or PASI.",
+      "points": 2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_15",
+      "text": "Counsel on infection symptoms that should prompt urgent evaluation during biologic therapy.",
+      "points": 2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_16",
+      "text": "Consider apremilast as an oral alternative, with dose adjustment if renal function declines further.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_17",
+      "text": "Consider deucravacitinib as an oral alternative.",
+      "points": 1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_18",
+      "text": "Obtain baseline liver elastography before starting systemic therapy.",
+      "points": 0
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_19",
+      "text": "Prefer an IL-17 inhibitor over an IL-23 inhibitor because of nail involvement.",
+      "points": 0
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_20",
+      "text": "Start methotrexate 15 mg weekly as proposed.",
+      "points": -3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_21",
+      "text": "Start methotrexate while continuing trimethoprim-sulfamethoxazole.",
+      "points": -3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_22",
+      "text": "Prescribe methotrexate on a daily schedule.",
+      "points": -3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_23",
+      "text": "Start cyclosporine.",
+      "points": -3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_24",
+      "text": "Start acitretin.",
+      "points": -1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_25",
+      "text": "Prescribe systemic oral prednisone for flare control.",
+      "points": -2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_26",
+      "text": "Start a biologic without tuberculosis screening.",
+      "points": -3
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_27",
+      "text": "Administer live vaccines while he is on biologic therapy.",
+      "points": -2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_28",
+      "text": "Stop all topical therapy once systemic therapy begins.",
+      "points": -1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_29",
+      "text": "Obtain a routine liver biopsy before treatment.",
+      "points": -1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_30",
+      "text": "Perform a skin biopsy to confirm classic plaque psoriasis.",
+      "points": -1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_31",
+      "text": "Prescribe hydroxychloroquine for joint symptoms.",
+      "points": -2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_32",
+      "text": "Start methotrexate 7.5 mg weekly with folic acid without addressing alcohol or trimethoprim-sulfamethoxazole.",
+      "points": -2
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_33",
+      "text": "Recommend tanning bed use as phototherapy.",
+      "points": -1
+    },
+    {
+      "item_id": "74053496cf62ec37fdb0a5ffd6d31472_34",
+      "text": "Start off-label tofacitinib for psoriasis.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}

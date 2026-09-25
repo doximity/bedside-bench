@@ -1,0 +1,204 @@
+{
+  "case_id": "a1d4d646f580912eafa2d2ae4c9b5393",
+  "benchmark": "safety_therapeutic",
+  "grading_method": "f1_weighted_rubric",
+  "prompt": "A 71-year-old man with newly diagnosed heart failure with reduced ejection fraction (LVEF 28%, nonischemic after a normal coronary angiogram) and permanent atrial fibrillation is seen 1 week after discharge. His medications are furosemide 40 mg daily, diltiazem ER 240 mg daily (started years ago for rate control), and apixaban 5 mg twice daily, and he takes naproxen for gout flares. Blood pressure is 118/72 mm Hg, heart rate 92 and irregular, with mild ankle edema; weight is 82 kg. Creatinine is 1.7 mg/dL (eGFR 41), potassium 5.0 mEq/L, and sodium 136 mEq/L. He feels better than on admission but still gets dyspneic walking one block. How would you optimize his regimen?\n\nProvide a stepwise therapeutic management plan including medications, counseling, and follow-up.",
+  "rubric_items": [
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_0",
+      "text": "Discontinue diltiazem because nondihydropyridine calcium channel blockers worsen outcomes in reduced ejection fraction.",
+      "points": 3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_1",
+      "text": "Start an evidence-based beta-blocker such as metoprolol succinate, carvedilol, or bisoprolol at a low dose and titrate every 2 weeks.",
+      "points": 3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_2",
+      "text": "Stop naproxen and advise avoidance of all NSAIDs.",
+      "points": 3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_3",
+      "text": "Start an SGLT2 inhibitor such as dapagliflozin or empagliflozin.",
+      "points": 3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_4",
+      "text": "Start low-dose sacubitril/valsartan, or an ACE inhibitor or ARB if an ARNI is not feasible.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_5",
+      "text": "Defer mineralocorticoid antagonist initiation until potassium is below 5.0 mEq/L and renal function is stable, then start low-dose spironolactone.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_6",
+      "text": "Recheck creatinine and potassium within 1 to 2 weeks after each renin-angiotensin or mineralocorticoid antagonist change.",
+      "points": 3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_7",
+      "text": "Continue apixaban 5 mg twice daily because he meets only one dose-reduction criterion.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_8",
+      "text": "Treat gout flares with renally adjusted low-dose colchicine or a short corticosteroid course instead of NSAIDs.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_9",
+      "text": "Consider low-dose allopurinol titrated to target uric acid for recurrent flares once the acute flare settles.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_10",
+      "text": "Adjust the furosemide dose to volume status guided by daily weights.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_11",
+      "text": "Counsel daily weights and to call for a gain of more than 2 pounds in a day or 5 pounds in a week.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_12",
+      "text": "Counsel moderate dietary sodium restriction.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_13",
+      "text": "Consider low-dose digoxin as add-on rate control if heart rate remains uncontrolled on a beta-blocker, with renal dosing and level monitoring.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_14",
+      "text": "Repeat echocardiography after about 3 months of optimized therapy to reassess ejection fraction before any ICD decision.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_15",
+      "text": "Consider tachycardia-mediated cardiomyopathy and refer to electrophysiology to discuss rhythm control if rate control remains inadequate.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_16",
+      "text": "Refer to a heart failure clinic and cardiac rehabilitation.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_17",
+      "text": "Update influenza, pneumococcal, and COVID-19 vaccinations.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_18",
+      "text": "Check iron studies and treat iron deficiency with intravenous iron when indicated.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_19",
+      "text": "Check thyroid function if not already done as part of the cardiomyopathy evaluation.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_20",
+      "text": "Obtain ambulatory ECG monitoring to assess 24-hour rate control.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_21",
+      "text": "Schedule follow-up in 1 to 2 weeks for medication titration.",
+      "points": 2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_22",
+      "text": "Counsel on SGLT2 inhibitor sick-day rules and genital hygiene.",
+      "points": 1
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_23",
+      "text": "Continue diltiazem and add a beta-blocker.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_24",
+      "text": "Increase diltiazem to improve rate control.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_25",
+      "text": "Continue naproxen at a lower dose for gout flares.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_26",
+      "text": "Start spironolactone 25 mg now despite potassium of 5.0 mEq/L and eGFR 41.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_27",
+      "text": "Start sacubitril/valsartan together with an ACE inhibitor.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_28",
+      "text": "Reduce apixaban to 2.5 mg twice daily because of renal function.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_29",
+      "text": "Replace apixaban with aspirin.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_30",
+      "text": "Start dronedarone for rhythm control.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_31",
+      "text": "Start flecainide for rhythm control.",
+      "points": -3
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_32",
+      "text": "Add a routine potassium supplement with the loop diuretic.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_33",
+      "text": "Prescribe a high-dose colchicine loading regimen for gout flares.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_34",
+      "text": "Discontinue furosemide entirely because edema is mild and creatinine is elevated.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_35",
+      "text": "Withhold all renin-angiotensin inhibition because eGFR is below 45.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_36",
+      "text": "Start ivabradine to lower heart rate.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_37",
+      "text": "Refer for immediate primary-prevention ICD implantation before optimizing medical therapy.",
+      "points": -2
+    },
+    {
+      "item_id": "a1d4d646f580912eafa2d2ae4c9b5393_38",
+      "text": "Advise drinking at least 3 liters of fluid daily to protect the kidneys.",
+      "points": -1
+    }
+  ],
+  "split": "train"
+}
