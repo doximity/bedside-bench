@@ -1,3 +1,52 @@
+---
+license: cc-by-nc-sa-4.0
+configs:
+- config_name: all
+  default: true
+  data_files:
+  - split: train
+    path: data/*/cases/*.json
+- config_name: drug_safety
+  data_files:
+  - split: train
+    path: data/drug_safety/cases/*.json
+- config_name: guideline_adherence
+  data_files:
+  - split: train
+    path: data/guideline_adherence/cases/*.json
+- config_name: landmark_trials
+  data_files:
+  - split: train
+    path: data/landmark_trials/cases/*.json
+- config_name: medical_hallucination
+  data_files:
+  - split: train
+    path: data/medical_hallucination/cases/*.json
+- config_name: health_equity
+  data_files:
+  - split: train
+    path: data/health_equity/cases/*.json
+- config_name: clinical_calculations
+  data_files:
+  - split: train
+    path: data/clinical_calculations/cases/*.json
+- config_name: calculators_numerical
+  data_files:
+  - split: train
+    path: data/calculators_numerical/cases/*.json
+- config_name: calculators_conditional
+  data_files:
+  - split: train
+    path: data/calculators_conditional/cases/*.json
+- config_name: safety_diagnostic
+  data_files:
+  - split: train
+    path: data/safety_diagnostic/cases/*.json
+- config_name: safety_therapeutic
+  data_files:
+  - split: train
+    path: data/safety_therapeutic/cases/*.json
+---
 # BedsideBench
 
 BedsideBench is a clinical question-answering benchmark with 500 cases and
