@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 
+import json
 import unittest
+from unittest import mock
 
+from evaluation import run_benchmark
 from evaluation.run_benchmark import (
+    JudgeError,
     dataset_sha256,
+    evaluate_case,
     parse_decisions,
     score_case,
+    stored_answers,
     summarize,
 )
 
@@ -130,6 +136,77 @@ class ScoreCaseTest(unittest.TestCase):
         self.assertEqual(summary["answer_temperature"], 0)
         self.assertEqual(summary["judge_passes_per_answer"], 1)
         self.assertEqual(summary["errors"], 0)
+
+    def test_summary_counts_truncated_answers(self):
+        rows = [
+            {"case_id": "a", "benchmark": "example", "score": 1.0, "answer_stop_reason": "stop"},
+            {"case_id": "b", "benchmark": "example", "score": 0.0, "answer_stop_reason": "length"},
+        ]
+        summary = summarize(rows, 10, 42, {"a", "b"}, "digest")
+        self.assertEqual(summary["truncated_answers"], 1)
+
+
+CASE = {
+    "case_id": "c1",
+    "benchmark": "example",
+    "grading_method": "points_rubric",
+    "prompt": "question",
+    "rubric_items": [{"item_id": "a", "text": "criterion", "points": 1}],
+}
+VALID_JUDGE = json.dumps({"decisions": [{"item_id": "a", "matched": True}]})
+TRUNCATED_JUDGE = '{"decisions":[{"item_id":"a","matched":tr'
+
+
+def fake_post_chat(judge_replies):
+    """Stand-in for post_chat: answers in plain mode, pops judge replies in JSON mode."""
+    calls = {"answer": 0, "judge": 0}
+
+    def post_chat(token, model, messages, **kwargs):
+        if kwargs["json_mode"]:
+            calls["judge"] += 1
+            return judge_replies.pop(0), 0, "stop"
+        calls["answer"] += 1
+        return f"answer {calls['answer']}", 1, "stop"
+
+    return post_chat, calls
+
+
+class JudgeFailureTest(unittest.TestCase):
+    def test_invalid_judge_reply_is_retried(self):
+        post_chat, calls = fake_post_chat([TRUNCATED_JUDGE, VALID_JUDGE])
+        with mock.patch.object(run_benchmark, "post_chat", post_chat):
+            row = evaluate_case("token", CASE, "answer-model", "judge-model", 1)
+        self.assertEqual(row["score"], 1.0)
+        self.assertEqual(calls, {"answer": 1, "judge": 2})
+
+    def test_judge_failure_keeps_the_answer(self):
+        replies = [TRUNCATED_JUDGE] * run_benchmark.JUDGE_ATTEMPTS
+        post_chat, _ = fake_post_chat(replies)
+        with mock.patch.object(run_benchmark, "post_chat", post_chat):
+            with self.assertRaises(JudgeError) as raised:
+                evaluate_case("token", CASE, "answer-model", "judge-model", 1)
+        self.assertEqual(raised.exception.answer["answer"], "answer 1")
+        self.assertEqual(raised.exception.judge_content, TRUNCATED_JUDGE)
+
+    def test_stored_answer_is_rejudged_not_resampled(self):
+        stored = {"answer": "kept answer", "answer_temperature": 1, "answer_stop_reason": "stop"}
+        post_chat, calls = fake_post_chat([VALID_JUDGE])
+        with mock.patch.object(run_benchmark, "post_chat", post_chat):
+            row = evaluate_case(
+                "token", CASE, "answer-model", "judge-model", 1, stored_answer=stored
+            )
+        self.assertEqual(row["answer"], "kept answer")
+        self.assertEqual(calls, {"answer": 0, "judge": 1})
+
+    def test_stored_answers_come_from_failed_rows_with_an_answer(self):
+        rows = [
+            {"case_id": "a", "error": "JudgeError: ...", "answer": "kept", "answer_temperature": 1},
+            {"case_id": "b", "error": "RuntimeError: answer request failed"},
+            {"case_id": "c", "score": 1.0, "answer": "done"},
+        ]
+        stored = stored_answers(rows)
+        self.assertEqual(set(stored), {"a"})
+        self.assertEqual(stored["a"]["answer"], "kept")
 
 
 if __name__ == "__main__":
