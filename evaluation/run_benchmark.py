@@ -33,6 +33,11 @@ ANSWER_MAX_TOKENS = 32000
 ANSWER_TEMPERATURE = 1
 JUDGE_TEMPERATURE = 0
 JUDGE_MAX_TOKENS = 5000
+# A judge reply that fails validation is requested again up to this many times.
+JUDGE_ATTEMPTS = 3
+# Provider stop reasons meaning the reply was cut off at its token limit.
+TRUNCATED_STOP_REASONS = {"length", "max_tokens", "MAX_TOKENS"}
+ANSWER_FIELDS = ("answer", "answer_temperature", "answer_stop_reason")
 API_URL = "https://api.openai.com/v1/chat/completions"
 FIREWORKS_API_URL = "https://api.fireworks.ai/inference/v1/chat/completions"
 ANTHROPIC_API_URL = "https://api.anthropic.com/v1/messages"
@@ -184,8 +189,11 @@ def post_chat(
     reasoning_effort: str | None = None,
     timeout: int = 300,
     temperature: int | None = JUDGE_TEMPERATURE,
-) -> tuple[str, int | None]:
-    """Call Chat Completions at ``temperature`` (judge default 0), dropping it if rejected."""
+) -> tuple[str, int | None, str | None]:
+    """Call Chat Completions at ``temperature`` (judge default 0), dropping it if rejected.
+
+    Returns the content, the temperature actually sent, and the finish reason.
+    """
     base = {
         "model": model,
         "messages": messages,
@@ -212,10 +220,11 @@ def post_chat(
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 payload = json.load(response)
-            content = payload["choices"][0]["message"].get("content")
+            choice = payload["choices"][0]
+            content = choice["message"].get("content")
             if not content:
                 raise RuntimeError("API returned an empty message")
-            return content, temperature
+            return content, temperature, choice.get("finish_reason")
         except urllib.error.HTTPError as error:
             detail = error.read().decode(errors="replace")[:1000]
             last_error = RuntimeError(f"HTTP {error.code}: {detail}")
@@ -274,7 +283,7 @@ def post_fireworks(
     reasoning_effort: str | None = None,
     timeout: int = 300,
     temperature: int | None = ANSWER_TEMPERATURE,
-) -> tuple[str, int | None]:
+) -> tuple[str, int | None, str | None]:
     """Call Fireworks chat completions."""
     resolved = resolve_answer_model(model)
     requested = reasoning_effort or "none"
@@ -304,10 +313,11 @@ def post_fireworks(
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 payload = json.load(response)
-            content = payload["choices"][0]["message"].get("content")
+            choice = payload["choices"][0]
+            content = choice["message"].get("content")
             if not content:
                 raise RuntimeError("Fireworks returned an empty message")
-            return content, temperature
+            return content, temperature, choice.get("finish_reason")
         except urllib.error.HTTPError as error:
             detail = error.read().decode(errors="replace")[:1000]
             last_error = RuntimeError(f"HTTP {error.code}: {detail}")
@@ -356,7 +366,7 @@ def post_anthropic(
     max_retries: int,
     reasoning_effort: str | None = None,
     timeout: int = 300,
-) -> tuple[str, int | None]:
+) -> tuple[str, int | None, str | None]:
     """Call Anthropic Messages. Omit temperature (rejected by Claude 4.6+)."""
     token = load_anthropic_token()
     resolved = resolve_answer_model(model)
@@ -397,7 +407,7 @@ def post_anthropic(
                     "Anthropic returned an empty text message "
                     f"stop={payload.get('stop_reason')}"
                 )
-            return content, None
+            return content, None, payload.get("stop_reason")
         except urllib.error.HTTPError as error:
             detail = error.read().decode(errors="replace")[:1000]
             last_error = RuntimeError(f"HTTP {error.code}: {detail}")
@@ -441,7 +451,7 @@ def post_gemini(
     reasoning_effort: str | None = None,
     timeout: int = 600,
     temperature: int | None = ANSWER_TEMPERATURE,
-) -> tuple[str, int | None]:
+) -> tuple[str, int | None, str | None]:
     """Call Gemini generateContent via Google AI Studio."""
     contents = []
     for message in messages:
@@ -477,10 +487,12 @@ def post_gemini(
         )
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
-                content = _gemini_text(json.load(response))
+                payload = json.load(response)
+            content = _gemini_text(payload)
             if not content:
                 raise RuntimeError("Gemini returned an empty message")
-            return content, temperature
+            candidate = (payload.get("candidates") or [{}])[0]
+            return content, temperature, candidate.get("finishReason")
         except urllib.error.HTTPError as error:
             detail = error.read().decode(errors="replace")[:1000]
             last_error = RuntimeError(f"HTTP {error.code}: {detail}")
@@ -575,22 +587,37 @@ def score_case(case: dict, decisions: dict[str, bool]) -> tuple[float, dict]:
     raise ValueError(f"unknown grading method: {case['grading_method']}")
 
 
-def evaluate_case(
+class JudgeError(ValueError):
+    """The judge never returned valid decisions for an answer.
+
+    Carries the answer and the last judge reply so the failure row can keep
+    them and a resumed run can re-judge the same answer.
+    """
+
+    def __init__(self, message: str, judge_content: str | None = None):
+        super().__init__(message)
+        self.judge_content = judge_content
+        self.answer: dict | None = None
+
+
+def is_truncated(stop_reason: str | None) -> bool:
+    return stop_reason in TRUNCATED_STOP_REASONS
+
+
+def generate_answer(
     token: str,
     case: dict,
     answer_model: str,
-    judge_model: str,
     max_retries: int,
     reasoning_effort: str | None = None,
 ) -> dict:
-    started = dt.datetime.now(dt.timezone.utc)
     answer_messages = [
         {"role": "system", "content": ANSWER_SYSTEM},
         {"role": "user", "content": case["prompt"]},
     ]
     answer_timeout = 600 if reasoning_effort else 300
     if is_gemini_model(answer_model):
-        answer, answer_temperature = post_gemini(
+        answer, answer_temperature, stop_reason = post_gemini(
             answer_model,
             answer_messages,
             max_output_tokens=ANSWER_MAX_TOKENS,
@@ -600,7 +627,7 @@ def evaluate_case(
             timeout=max(answer_timeout, 600),
         )
     elif is_fireworks_model(answer_model):
-        answer, answer_temperature = post_fireworks(
+        answer, answer_temperature, stop_reason = post_fireworks(
             load_fireworks_token(),
             answer_model,
             answer_messages,
@@ -611,7 +638,7 @@ def evaluate_case(
             timeout=answer_timeout,
         )
     elif is_anthropic_model(answer_model):
-        answer, answer_temperature = post_anthropic(
+        answer, answer_temperature, stop_reason = post_anthropic(
             answer_model,
             answer_messages,
             max_tokens=ANSWER_MAX_TOKENS,
@@ -620,7 +647,7 @@ def evaluate_case(
             timeout=answer_timeout,
         )
     else:
-        answer, answer_temperature = post_chat(
+        answer, answer_temperature, stop_reason = post_chat(
             token,
             answer_model,
             answer_messages,
@@ -631,19 +658,71 @@ def evaluate_case(
             timeout=answer_timeout,
             temperature=ANSWER_TEMPERATURE,
         )
+    return {
+        "answer": answer,
+        "answer_temperature": answer_temperature,
+        "answer_stop_reason": stop_reason,
+    }
 
-    judge_content, judge_temperature = post_chat(
-        token,
-        judge_model,
-        [
-            {"role": "system", "content": JUDGE_SYSTEM},
-            {"role": "user", "content": render_judge_user(case, answer)},
-        ],
-        max_completion_tokens=JUDGE_MAX_TOKENS,
-        json_mode=True,
-        max_retries=max_retries,
+
+def judge_answer(
+    token: str,
+    case: dict,
+    answer: str,
+    judge_model: str,
+    max_retries: int,
+) -> tuple[dict[str, bool], int | None]:
+    """Ask the judge for item decisions, re-asking when a reply fails validation."""
+    messages = [
+        {"role": "system", "content": JUDGE_SYSTEM},
+        {"role": "user", "content": render_judge_user(case, answer)},
+    ]
+    judge_content = None
+    last_error = None
+    for _ in range(JUDGE_ATTEMPTS):
+        judge_content, judge_temperature, _ = post_chat(
+            token,
+            judge_model,
+            messages,
+            max_completion_tokens=JUDGE_MAX_TOKENS,
+            json_mode=True,
+            max_retries=max_retries,
+        )
+        try:
+            return parse_decisions(case, judge_content), judge_temperature
+        except ValueError as error:
+            last_error = error
+    raise JudgeError(
+        f"no valid judge reply after {JUDGE_ATTEMPTS} attempts: {last_error}",
+        judge_content,
     )
-    decisions = parse_decisions(case, judge_content)
+
+
+def evaluate_case(
+    token: str,
+    case: dict,
+    answer_model: str,
+    judge_model: str,
+    max_retries: int,
+    reasoning_effort: str | None = None,
+    stored_answer: dict | None = None,
+) -> dict:
+    """Answer (or reuse ``stored_answer``), judge, and score one case."""
+    started = dt.datetime.now(dt.timezone.utc)
+    generated = stored_answer or generate_answer(
+        token, case, answer_model, max_retries, reasoning_effort
+    )
+    try:
+        decisions, judge_temperature = judge_answer(
+            token, case, generated["answer"], judge_model, max_retries
+        )
+    except JudgeError as error:
+        error.answer = generated
+        raise
+    except Exception as error:  # judge request still failing after its retries
+        failure = JudgeError(f"judge request failed: {error}")
+        failure.answer = generated
+        raise failure from error
     score, components = score_case(case, decisions)
     finished = dt.datetime.now(dt.timezone.utc)
 
@@ -655,12 +734,13 @@ def evaluate_case(
         "answer_model": answer_model,
         "judge_model": judge_model,
         "answer_reasoning_effort": reasoning_effort,
-        "answer_temperature": answer_temperature,
+        "answer_temperature": generated["answer_temperature"],
+        "answer_stop_reason": generated.get("answer_stop_reason"),
         "judge_temperature": judge_temperature,
         "started_at": started.isoformat(),
         "finished_at": finished.isoformat(),
         "elapsed_seconds": (finished - started).total_seconds(),
-        "answer": answer,
+        "answer": generated["answer"],
         "decisions": [
             {
                 "item_id": item["item_id"],
@@ -694,6 +774,15 @@ def successful_by_case(rows: list[dict]) -> dict[str, dict]:
         if "score" in row and not row.get("error"):
             successful[row["case_id"]] = row
     return successful
+
+
+def stored_answers(rows: list[dict]) -> dict[str, dict]:
+    """Answers kept on failed rows, so a resumed run re-judges them instead of re-sampling."""
+    stored = {}
+    for row in rows:
+        if row.get("error") and row.get("answer"):
+            stored[row["case_id"]] = {field: row.get(field) for field in ANSWER_FIELDS}
+    return stored
 
 
 def percentile(values: list[float], probability: float) -> float:
@@ -804,6 +893,9 @@ def summarize(
         "finished_at": max(finished_at) if finished_at else None,
         "completed_cases": len(successful),
         "errors": sum(bool(row.get("error")) for row in latest_by_case.values()),
+        "truncated_answers": sum(
+            is_truncated(row.get("answer_stop_reason")) for row in successful.values()
+        ),
         "overall_macro_mean": overall,
         "overall_ci95": overall_ci,
         "benchmarks": benchmark_summary,
@@ -853,13 +945,16 @@ def main() -> int:
     token = load_token()
     completed = successful_by_case(rows)
     pending = [case for case in selected if case["case_id"] not in completed]
+    stored = stored_answers(rows)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     write_lock = threading.Lock()
     answer_effort = resolve_reasoning_effort(args.answer_model, args.reasoning_effort)
 
     print(
         f"selected={len(selected)} completed={len(selected) - len(pending)} "
-        f"pending={len(pending)} workers={args.workers} "
+        f"pending={len(pending)} "
+        f"rejudge={sum(case['case_id'] in stored for case in pending)} "
+        f"workers={args.workers} "
         f"reasoning_effort={answer_effort}"
     )
 
@@ -877,6 +972,7 @@ def main() -> int:
                     args.judge_model,
                     args.max_retries,
                     answer_effort,
+                    stored.get(case["case_id"]),
                 ): case
                 for case in pending
             }
@@ -898,6 +994,9 @@ def main() -> int:
                         "finished_at": dt.datetime.now(dt.timezone.utc).isoformat(),
                         "error": f"{type(error).__name__}: {error}"[:2000],
                     }
+                    if isinstance(error, JudgeError) and error.answer:
+                        row.update(error.answer)
+                        row["judge_content"] = (error.judge_content or "")[:20000]
                     status = "ERROR"
                 with write_lock:
                     output.write(json.dumps(row, ensure_ascii=False) + "\n")

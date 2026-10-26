@@ -17,7 +17,9 @@ message and the following system message:
 The runner uses the OpenAI Chat Completions API. It requests temperature `1`
 for the answer model and records `null` when a model accepts only the provider
 default. Every result
-records the model identifier, prompt version, temperature, answer, and run time.
+records the model identifier, prompt version, temperature, answer, the
+provider's stop reason, and run time. An answer that stopped at its token
+limit is counted in the summary's `truncated_answers`.
 
 ## 2. Judge rubric-item matches
 
@@ -61,7 +63,10 @@ Reference results use:
 - judge temperature `0` when supported by the model;
 - exact validation of returned `item_id` values.
 
-The runner rejects incomplete, duplicate, or unexpected judge decisions.
+The runner rejects incomplete, duplicate, or unexpected judge decisions and
+asks the judge again, up to three times. If no valid reply arrives, the case is
+recorded as an error that keeps the answer and the last judge reply, and a
+rerun re-judges that same answer instead of sampling a new one.
 
 ## 3. Case scoring
 
@@ -160,6 +165,7 @@ Report all of the following:
 - protocol version;
 - dataset digest;
 - number of completed and failed cases;
+- number of truncated answers;
 - each benchmark mean and 95% confidence interval;
 - overall macro-average and 95% confidence interval;
 - number of judge passes per answer.
